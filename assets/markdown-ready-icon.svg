@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Markdown Ready — App Icon (SVG master, 1024x1024)
+  디자인 DNA: RockSpin/CleanClip 시그니처 계승
+    - 배경: 코랄/오렌지 라디얼 그라데이션 (중앙 #FF5733 → 외곽 #FF9A76)  [확정]
+    - 심볼: 순백 "MD" 모노그램 (Markdown) — 제품 본질 PDF→Markdown 직결
+    - 스타일: flat, 굵은 uniform stroke, 단일 포컬 (CleanClip CC 직계)
+  라운드 코너(squircle)는 시스템이 마스킹 — 본 이미지는 풀 스퀘어.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <!-- 코랄/오렌지 라디얼 그라데이션: 중앙 진한 코랄 → 외곽 연한 살몬 -->
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0%" stop-color="#FF5733"/>
+      <stop offset="100%" stop-color="#FF9A76"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- "MD" 모노그램: 굵은 Black 웨이트, M이 상대적으로 넓어 자간을 더 좁혀 단단하게 -->
+  <text x="512" y="690"
+        font-family="Arial Black, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="440" font-weight="900"
+        fill="#FFFFFF"
+        text-anchor="middle"
+        letter-spacing="-30">MD</text>
+</svg>

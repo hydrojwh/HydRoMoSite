@@ -4,13 +4,14 @@ Static root website for `https://hydromo.dev`.
 
 ## Purpose
 
-This site is the official public home for HydRoMo and links to product-specific pages for RockSpin and CleanClip. It is intended to be suitable for Apple Developer organization website verification.
+This site is the official public home for HydRoMo and links to product-specific pages for Markdown Ready, RockSpin, and CleanClip. It is intended to be suitable for Apple Developer organization website verification.
 
 ## Files
 
 - `index.html`: HydRoMo landing page
 - `support/index.html`: product support index
 - `privacy/index.html`: product privacy index
+- `markdown-ready/`: Markdown Ready product, support, and privacy pages for App Store Connect
 - `assets/hydromo-logo.svg`: HydRoMo logo asset
 - `CNAME`: GitHub Pages custom domain (`hydromo.dev`)
 
