@@ -122,6 +122,17 @@ h3 {
   max-width: 720px;
 }
 
+.launch-strip {
+  display: inline-block;
+  margin: 26px 0 0;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 87, 51, 0.34);
+  border-radius: 8px;
+  background: rgba(255, 87, 51, 0.08);
+  color: var(--text);
+  font-weight: 750;
+}
+
 .actions {
   margin-top: 34px;
   display: flex;
@@ -283,6 +294,13 @@ h3 {
 .content h2 {
   margin: 32px 0 10px;
   font-size: 22px;
+}
+
+.content code {
+  padding: 2px 5px;
+  border-radius: 6px;
+  background: #eef1f5;
+  color: var(--text);
 }
 
 .support-list {

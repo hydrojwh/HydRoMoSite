@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Support information for Markdown Ready, a macOS PDF to Markdown app by HydRoMo.">
-    <title>Support - Markdown Ready</title>
+    <meta name="description" content="Learn how to use Markdown Ready, choose input and output folders, run PDF/image to Markdown conversion, use folder watching, and understand local OCR limitations.">
+    <title>Markdown Ready Support</title>
     <link rel="icon" href="/assets/markdown-ready-icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../styles.css">
   </head>
@@ -25,29 +25,83 @@
         <p class="eyebrow">Support</p>
         <h1>Markdown Ready Support</h1>
         <p>
-          For help with Markdown Ready, contact HydRoMo support by email.
+          Markdown Ready is a macOS menu-bar app for converting PDFs, scanned pages, and document images into Markdown and optional JSON files on your Mac.
         </p>
-        <p><a href="mailto:support@hydromo.dev">support@hydromo.dev</a></p>
+
+        <h2>Quick Start</h2>
+        <ol>
+          <li>Open Markdown Ready from the menu bar.</li>
+          <li>Select a PDF, JPG/JPEG, PNG, or input folder.</li>
+          <li>Choose an output folder.</li>
+          <li>Choose Markdown and/or JSON output.</li>
+          <li>Use table options if your document contains important tables.</li>
+          <li>Start conversion.</li>
+          <li>Open Last Result or the selected output folder to review the generated file.</li>
+        </ol>
 
         <h2>Supported Inputs</h2>
         <ul>
-          <li>PDF documents</li>
-          <li>JPG and JPEG images</li>
-          <li>PNG images and screenshots</li>
+          <li>PDF</li>
+          <li>JPG/JPEG</li>
+          <li>PNG</li>
+          <li>Folders containing supported document files</li>
         </ul>
 
-        <h2>Common Checks</h2>
+        <h2>Supported Outputs</h2>
         <ul>
-          <li>Use the macOS file or folder picker to choose an input file or input folder.</li>
-          <li>Choose a writable output folder before starting conversion.</li>
-          <li>For folder processing, leave the app running while new files are scanned.</li>
-          <li>If conversion quality is poor, try a higher quality source file or a cleaner scan.</li>
+          <li>Markdown (<code>.md</code>)</li>
+          <li>Optional JSON sidecar (<code>.json</code>)</li>
         </ul>
+
+        <h2>Folder Watching</h2>
+        <p>
+          Folder watching is designed for hands-off batches. Choose an input folder and an output folder, then start watching. While the app is running, supported files placed in the input folder are converted into the output folder.
+        </p>
+        <ul>
+          <li>The app stores local fingerprints so repeated scans can skip files already processed by the watched workflow.</li>
+          <li>If you edit or replace a source file and want to process it again, use the app's clear/reset workflow where available.</li>
+          <li>Keep the app running while using folder watching.</li>
+        </ul>
+
+        <h2>Performance And Power</h2>
+        <p>
+          Markdown Ready runs local OCR on your Mac. Large PDFs, image-heavy documents, and folder batches can use sustained CPU/GPU and unified memory. For long conversions, connect your Mac to power and avoid closing the lid.
+        </p>
+
+        <h2>Accuracy And Review</h2>
+        <p>
+          OCR output can contain mistakes. Complex tables, equations, handwriting, poor scans, screenshots, rotated pages, and tiny text need review. Markdown Ready prepares documents for reuse; it does not verify facts or replace human judgment.
+        </p>
 
         <h2>Privacy</h2>
         <p>
-          Markdown Ready is designed for local document conversion. Review the
+          The app processes selected documents locally and does not upload document contents to a cloud OCR API. Settings, selected folder access bookmarks, and processed-file fingerprints are stored locally on your Mac. Review the
           <a href="../privacy/">Markdown Ready Privacy Policy</a> for details.
+        </p>
+
+        <h2>Troubleshooting</h2>
+        <div class="support-list">
+          <section>
+            <h3>The app cannot access a folder after relaunch</h3>
+            <p>Choose the input/output folder again from the app so macOS can refresh the user-selected folder permission.</p>
+          </section>
+          <section>
+            <h3>Conversion is slow</h3>
+            <p>Large documents can take time because OCR runs locally. Try a smaller test file first, keep the Mac connected to power, and avoid running other heavy workloads at the same time.</p>
+          </section>
+          <section>
+            <h3>Output is missing a table or formula</h3>
+            <p>Enable the table-related options, convert again, and review the output. Very complex tables and formulas may still need manual correction.</p>
+          </section>
+          <section>
+            <h3>I do not see a new file in the output folder</h3>
+            <p>Confirm that an output folder is selected, the source file type is supported, and the app has permission to access both folders.</p>
+          </section>
+        </div>
+
+        <h2>Contact</h2>
+        <p>
+          For support, contact <a href="mailto:support@hydromo.dev">support@hydromo.dev</a>. Include your macOS version, Mac model, Markdown Ready version/build, input file type, page count, and a short description of the issue. Do not send sensitive documents unless you intentionally choose to share them.
         </p>
       </main>
 

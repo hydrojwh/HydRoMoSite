@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Markdown Ready is a macOS PDF to Markdown app with local OCR, offline conversion, and no cloud document upload.">
-    <title>Markdown Ready - PDF to Markdown for Mac</title>
+    <meta name="description" content="Convert PDFs, scanned pages, and document images into reviewable Markdown and optional JSON on Apple Silicon Macs. Local OCR, folder watching, no cloud OCR API.">
+    <title>Markdown Ready - PDF to Markdown on your Mac</title>
     <link rel="icon" href="/assets/markdown-ready-icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../styles.css">
   </head>
@@ -24,62 +24,121 @@
       <main>
         <section class="hero product-hero">
           <div>
-            <p class="eyebrow">PDF to Markdown for Mac</p>
+            <p class="eyebrow">PDF to Markdown on your Mac</p>
             <h1>Markdown Ready</h1>
             <p class="lead">
-              Convert PDFs, scans, and screenshots into clean Markdown for AI workflows on your Mac.
+              Turn PDFs, scanned pages, and document images into structured Markdown you can review, edit, search, and reuse in AI, research, notes, wikis, and archives.
+            </p>
+            <p class="launch-strip">
+              Summer launch sale: $4.99 until August 31, 2026. Regular price $29.99. No subscription.
             </p>
             <div class="actions">
-              <a class="button primary" href="support/">Get Support</a>
+              <a class="button primary" href="support/">Read Support Guide</a>
               <a class="button" href="privacy/">Privacy Policy</a>
             </div>
           </div>
           <img class="app-icon" src="../assets/markdown-ready-icon.svg" alt="Markdown Ready app icon" width="180" height="180">
         </section>
 
-        <section class="section split" aria-labelledby="local-title">
+        <section class="section split" aria-labelledby="copy-title">
           <div>
-            <p class="eyebrow">Local Processing</p>
-            <h2 id="local-title">Built for private document work</h2>
+            <p class="eyebrow">From PDF to usable text</p>
+            <h2 id="copy-title">Still copying pages out of PDFs by hand?</h2>
           </div>
           <p>
-            Markdown Ready uses an on-device OCR model on Apple Silicon. Files are selected through macOS file and folder pickers, processed locally, and written to an output folder you choose.
+            Textbooks, research papers, scanned reports, old PDFs, and long source documents are painful to reuse when the content is trapped in page images or broken copy-paste output. Markdown Ready converts the document first, so you can inspect the structure before sending it into your notes, editor, AI tool, or archive.
           </p>
         </section>
 
         <section class="section" aria-labelledby="features-title">
           <div class="section-heading">
-            <p class="eyebrow">Features</p>
-            <h2 id="features-title">Current App Capabilities</h2>
+            <p class="eyebrow">Current Features</p>
+            <h2 id="features-title">Document conversion without a cloud OCR API</h2>
           </div>
           <div class="feature-grid">
             <section>
-              <h3>Markdown output</h3>
-              <p>Convert PDF pages and document images into reviewable Markdown for GPT, Claude, Notion, Obsidian, RAG, and writing workflows.</p>
+              <h3>PDF and image input</h3>
+              <p>Choose a PDF, JPG/JPEG, PNG, or input folder through macOS file and folder pickers.</p>
             </section>
             <section>
-              <h3>Image input</h3>
-              <p>Use PDF, JPG, JPEG, and PNG files. Folder processing can scan supported files and avoid repeated work with local file fingerprints.</p>
+              <h3>Markdown and JSON output</h3>
+              <p>Generate Markdown for review and optional JSON sidecar files for inspection, automation, and downstream workflows.</p>
+            </section>
+            <section>
+              <h3>Reading modes</h3>
+              <p>Use Page Original or Clean Reading output modes depending on whether you want page-by-page structure or a cleaner continuous document.</p>
             </section>
             <section>
               <h3>Table options</h3>
-              <p>Choose whether OCR should preserve tables and use PDFKit-based table recovery for text-layer PDFs where available.</p>
+              <p>Use table preservation and PDFKit-based table recovery options when structure matters.</p>
             </section>
             <section>
-              <h3>JSON sidecar</h3>
-              <p>Optionally write a JSON sidecar with source, settings, page Markdown, and simple block metadata alongside Markdown output.</p>
+              <h3>Folder watching</h3>
+              <p>Leave supported files in an input folder and Markdown Ready can scan/watch while it is running.</p>
+            </section>
+            <section>
+              <h3>Local OCR</h3>
+              <p>Documents are processed locally on Apple Silicon and written to the output folder you choose.</p>
             </section>
           </div>
         </section>
 
-        <section class="section split" aria-labelledby="status-title">
+        <section class="section split" aria-labelledby="local-title">
           <div>
-            <p class="eyebrow">Availability</p>
-            <h2 id="status-title">Mac app in TestFlight build-up</h2>
+            <p class="eyebrow">Local Processing</p>
+            <h2 id="local-title">Your documents stay on your Mac</h2>
           </div>
           <p>
-            Markdown Ready is being prepared as a macOS App Store product by HydRoMo. It works best on Apple Silicon Macs. Complex scans, handwriting, historical documents, and low-quality images are handled best effort depending on source quality.
+            Your documents are selected through macOS file and folder pickers and processed locally. Markdown Ready does not upload document contents to a cloud OCR API. The output is written to the folder you choose.
           </p>
+        </section>
+
+        <section class="section split" aria-labelledby="watch-title">
+          <div>
+            <p class="eyebrow">Folder Workflow</p>
+            <h2 id="watch-title">Put files in a folder, get Markdown out</h2>
+          </div>
+          <p>
+            Choose an input folder and an output folder, then keep Markdown Ready watching while it runs. New supported files are converted into the selected output folder, and already processed files are skipped using local fingerprints.
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="notes-title">
+          <div class="section-heading">
+            <p class="eyebrow">Important Notes</p>
+            <h2 id="notes-title">Local OCR is useful, but still needs review</h2>
+          </div>
+          <div class="feature-grid">
+            <section>
+              <h3>Performance and power</h3>
+              <p>Large PDFs and folder batches can use sustained CPU/GPU and unified memory on Apple Silicon. For long conversions, keep your Mac connected to power.</p>
+            </section>
+            <section>
+              <h3>Accuracy</h3>
+              <p>OCR is not perfect. Complex tables, formulas, handwriting, historical scans, screenshots, tiny text, and low-quality source images can produce mistakes.</p>
+            </section>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="faq-title">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-title">Common questions</h2>
+          </div>
+          <div class="support-list">
+            <section>
+              <h3>Does Markdown Ready upload my documents?</h3>
+              <p>No. Markdown Ready processes selected documents locally on your Mac and writes output to the folder you choose. No cloud OCR API is required for model loading or conversion.</p>
+            </section>
+            <section>
+              <h3>Is the output always perfect?</h3>
+              <p>No OCR system is perfect. Markdown Ready is designed to make documents easier to inspect and reuse, but important sections should be reviewed before you rely on the output.</p>
+            </section>
+            <section>
+              <h3>Can it watch a folder?</h3>
+              <p>Yes. Choose an input folder and output folder, then use folder watching while the app is running. New supported files are converted and previously processed files are skipped.</p>
+            </section>
+          </div>
         </section>
       </main>
 
