@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Learn how to use Markdown Ready, choose input and output folders, run PDF/image to Markdown conversion, use folder watching, and understand local OCR limitations.">
+    <meta name="description" content="Learn how to use Markdown Ready, choose an engine and input, run file or one-time folder conversion, and understand local OCR limitations.">
     <title>Markdown Ready Support</title>
     <link rel="icon" href="/assets/markdown-ready-icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../styles.css">
@@ -31,12 +31,12 @@
         <h2>Quick Start</h2>
         <ol>
           <li>Open Markdown Ready from the menu bar.</li>
-          <li>Select a PDF, JPG/JPEG, PNG, or input folder.</li>
-          <li>Choose an output folder.</li>
-          <li>Choose Markdown and/or JSON output.</li>
-          <li>Use table options if your document contains important tables.</li>
-          <li>Start conversion.</li>
-          <li>Open Last Result or the selected output folder to review the generated file.</li>
+          <li>Under Engine, choose GLM-OCR or PaddleOCR-VL.</li>
+          <li>Under Input, select a PDF, JPG/JPEG, PNG, or folder; use Save To for the destination.</li>
+          <li>Choose Markdown and optional JSON, turn Tables on if needed, and set Existing behavior.</li>
+          <li>Press Start; use Stop to cancel an active conversion.</li>
+          <li>Use Output to review generated files.</li>
+          <li>About shows product and license information; Quit closes the app.</li>
         </ol>
 
         <h2>Supported Inputs</h2>
@@ -53,14 +53,14 @@
           <li>Optional JSON sidecar (<code>.json</code>)</li>
         </ul>
 
-        <h2>Folder Watching</h2>
+        <h2>One-Time Folder Batches</h2>
         <p>
-          Folder watching is designed for hands-off batches. Choose an input folder and an output folder, then start watching. While the app is running, supported files placed in the input folder are converted into the output folder.
+          Choose an input folder and a Save To folder, then press Start. Markdown Ready enumerates supported files directly inside the input folder and processes that flat list once.
         </p>
         <ul>
-          <li>The app stores local fingerprints so repeated scans can skip files already processed by the watched workflow.</li>
-          <li>If you edit or replace a source file and want to process it again, use the app's clear/reset workflow where available.</li>
-          <li>Keep the app running while using folder watching.</li>
+          <li>Subfolders are not traversed.</li>
+          <li>The app does not watch or poll the folder after the run starts or completes.</li>
+          <li>Use Existing to choose whether matching output is skipped or overwritten.</li>
         </ul>
 
         <h2>Performance And Power</h2>
@@ -75,7 +75,7 @@
 
         <h2>Privacy</h2>
         <p>
-          The app processes selected documents locally and does not upload document contents to a cloud OCR API. Settings, selected folder access bookmarks, and processed-file fingerprints are stored locally on your Mac. Review the
+          The app processes selected documents locally and does not upload document contents to a cloud OCR API. Settings, selected folder access bookmarks, and local conversion history are stored on your Mac. Review the
           <a href="../privacy/">Markdown Ready Privacy Policy</a> for details.
         </p>
 
@@ -91,7 +91,7 @@
           </section>
           <section>
             <h3>Output is missing a table or formula</h3>
-            <p>Enable the table-related options, convert again, and review the output. Very complex tables and formulas may still need manual correction.</p>
+            <p>Turn Tables on, convert again, and review the output. Very complex tables and formulas may still need manual correction.</p>
           </section>
           <section>
             <h3>I do not see a new file in the output folder</h3>

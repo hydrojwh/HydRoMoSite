@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Convert PDFs, scanned pages, and document images into reviewable Markdown and optional JSON on Apple Silicon Macs. Local OCR, folder watching, no cloud OCR API.">
+    <meta name="description" content="Convert PDFs, scanned pages, and document images into reviewable Markdown and optional JSON on Apple Silicon Macs. Two local OCR engines, no cloud OCR API.">
     <title>Markdown Ready - PDF to Markdown on your Mac</title>
     <link rel="icon" href="/assets/markdown-ready-icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../styles.css">
@@ -30,7 +30,7 @@
               Turn PDFs, scanned pages, and document images into structured Markdown you can review, edit, search, and reuse in AI, research, notes, wikis, and archives.
             </p>
             <p class="launch-strip">
-              Summer launch sale: $4.99 until August 31, 2026. Regular price $29.99. No subscription.
+              One-time purchase: $14.99. No subscription.
             </p>
             <div class="actions">
               <a class="button primary" href="support/">Read Support Guide</a>
@@ -65,16 +65,16 @@
               <p>Generate Markdown for review and optional JSON sidecar files for inspection, automation, and downstream workflows.</p>
             </section>
             <section>
-              <h3>Reading modes</h3>
-              <p>Use Page Original or Clean Reading output modes depending on whether you want page-by-page structure or a cleaner continuous document.</p>
+              <h3>Two local OCR engines</h3>
+              <p>Choose between GLM-OCR and PaddleOCR-VL for each conversion.</p>
             </section>
             <section>
               <h3>Table options</h3>
-              <p>Use table preservation and PDFKit-based table recovery options when structure matters.</p>
+              <p>Turn on the Tables option when table-aware conversion matters.</p>
             </section>
             <section>
-              <h3>Folder watching</h3>
-              <p>Leave supported files in an input folder and Markdown Ready can scan/watch while it is running.</p>
+              <h3>One-time folder batches</h3>
+              <p>Process supported files directly inside a selected folder once, without traversing subfolders.</p>
             </section>
             <section>
               <h3>Local OCR</h3>
@@ -93,14 +93,29 @@
           </p>
         </section>
 
-        <section class="section split" aria-labelledby="watch-title">
+        <section class="section split" aria-labelledby="batch-title">
           <div>
             <p class="eyebrow">Folder Workflow</p>
-            <h2 id="watch-title">Put files in a folder, get Markdown out</h2>
+            <h2 id="batch-title">One-Time Folder Batches</h2>
           </div>
           <p>
-            Choose an input folder and an output folder, then keep Markdown Ready watching while it runs. New supported files are converted into the selected output folder, and already processed files are skipped using local fingerprints.
+            Choose a folder and press Start to process supported files directly inside it once. The batch is non-recursive: subfolders are not traversed, and Markdown Ready does not watch or poll the folder for later changes.
           </p>
+        </section>
+
+        <section class="section" aria-labelledby="workflow-title">
+          <div class="section-heading">
+            <p class="eyebrow">How It Works</p>
+            <h2 id="workflow-title">From source file to reviewable output</h2>
+          </div>
+          <ol>
+            <li>Select a PDF, document image, or folder.</li>
+            <li>Choose where Markdown Ready should save converted files.</li>
+            <li>Pick Markdown and optional JSON output.</li>
+            <li>Turn Tables on when structure matters and choose how Existing output is handled.</li>
+            <li>Press Start. A folder input runs once over supported top-level files only.</li>
+            <li>Use Output to review the saved files before using them downstream.</li>
+          </ol>
         </section>
 
         <section class="section" aria-labelledby="notes-title">
@@ -135,8 +150,8 @@
               <p>No OCR system is perfect. Markdown Ready is designed to make documents easier to inspect and reuse, but important sections should be reviewed before you rely on the output.</p>
             </section>
             <section>
-              <h3>Can it watch a folder?</h3>
-              <p>Yes. Choose an input folder and output folder, then use folder watching while the app is running. New supported files are converted and previously processed files are skipped.</p>
+              <h3>How does folder input work?</h3>
+              <p>Choose a folder under Input and press Start. Markdown Ready processes supported files directly inside that folder once. It does not recurse into subfolders or watch or poll for later changes.</p>
             </section>
           </div>
         </section>
