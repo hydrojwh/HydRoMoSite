@@ -7,6 +7,23 @@
     <title>Markdown Ready Support</title>
     <link rel="icon" href="/assets/markdown-ready-icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../styles.css">
+    <style>
+      .comparison-cards { display: grid; gap: 16px; margin: 24px 0 36px; }
+      .comparison-card { border: 1px solid var(--line); border-radius: 14px; padding: 20px; background: var(--panel); }
+      .comparison-card h3 { margin-top: 0; }
+      .comparison-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+      .comparison-columns section { border-top: 1px solid var(--line); padding-top: 12px; }
+      .comparison-columns h4 { margin: 0 0 6px; font-size: 0.9rem; letter-spacing: 0.02em; }
+      .comparison-columns p { margin: 0; }
+      .qa-list { display: grid; gap: 12px; margin: 22px 0 36px; }
+      .qa-list details { border: 1px solid var(--line); border-radius: 12px; background: var(--panel); padding: 0 18px; }
+      .qa-list summary { cursor: pointer; font-weight: 650; padding: 16px 28px 16px 0; }
+      .qa-list details p { margin: 0 0 18px; }
+      .qa-list details[open] { border-color: var(--blue); }
+      @media (max-width: 640px) {
+        .comparison-columns { grid-template-columns: 1fr; }
+      }
+    </style>
   </head>
   <body>
     <div class="page">
@@ -25,8 +42,57 @@
         <p class="eyebrow">Support</p>
         <h1>Markdown Ready Support</h1>
         <p>
-          Markdown Ready is a macOS menu-bar app for converting PDFs, scanned pages, and document images into Markdown and optional JSON files on your Mac.
+          Markdown Ready is a private, on-device document compiler for macOS. It converts PDFs, scanned pages, and document images into durable Markdown and optional JSON files that you can inspect, edit, archive, and reuse.
         </p>
+
+        <h2>Why Markdown Ready?</h2>
+        <p>
+          Direct PDF chat and Markdown Ready solve different jobs. Direct chat is ideal for a quick question or summary. Markdown Ready is for converting once, keeping the result, and reusing the same local document artifact across services and tools.
+        </p>
+        <div class="comparison-cards">
+          <article class="comparison-card">
+            <h3>PDF once, then ask</h3>
+            <div class="comparison-columns">
+              <section><h4>Direct PDF chat</h4><p>Fast and convenient for questions, summaries, and interactive reasoning.</p></section>
+              <section><h4>Markdown Ready</h4><p>Adds a conversion step before you work with the document.</p></section>
+            </div>
+          </article>
+          <article class="comparison-card">
+            <h3>Keep a durable result</h3>
+            <div class="comparison-columns">
+              <section><h4>Direct PDF chat</h4><p>Answers stay inside a conversation and may vary with the prompt or service.</p></section>
+              <section><h4>Markdown Ready</h4><p>Creates reusable <code>.md</code> and optional <code>.json</code> files in a folder you choose.</p></section>
+            </div>
+          </article>
+          <article class="comparison-card">
+            <h3>Choose where processing happens</h3>
+            <div class="comparison-columns">
+              <section><h4>Direct PDF chat</h4><p>The document is sent to a cloud service for processing.</p></section>
+              <section><h4>Markdown Ready</h4><p>Bundled OCR models process selected documents locally on your Mac.</p></section>
+            </div>
+          </article>
+          <article class="comparison-card">
+            <h3>Run batches and long jobs</h3>
+            <div class="comparison-columns">
+              <section><h4>Direct PDF chat</h4><p>File, context, policy, and usage limits depend on the service.</p></section>
+              <section><h4>Markdown Ready</h4><p>Processes local files or a flat-folder batch and uses ten-page chunks for PDFs.</p></section>
+            </div>
+          </article>
+          <article class="comparison-card">
+            <h3>See what needs review</h3>
+            <div class="comparison-columns">
+              <section><h4>Direct PDF chat</h4><p>Processing and recovery behavior are managed by the service.</p></section>
+              <section><h4>Markdown Ready</h4><p>Retains clean chunk checkpoints and reports page-level failures or quality warnings.</p></section>
+            </div>
+          </article>
+          <article class="comparison-card">
+            <h3>Reuse across tools</h3>
+            <div class="comparison-columns">
+              <section><h4>Direct PDF chat</h4><p>You may need to upload the source again or retain it in a service project.</p></section>
+              <section><h4>Markdown Ready</h4><p>The same Markdown can move between chat, local models, notes, wikis, RAG, and archives.</p></section>
+            </div>
+          </article>
+        </div>
 
         <h2>Quick Start</h2>
         <ol>
@@ -97,6 +163,38 @@
             <h3>I do not see a new file in the output folder</h3>
             <p>Confirm that an output folder is selected, the source file type is supported, and the app has permission to access both folders.</p>
           </section>
+        </div>
+
+        <h2 id="questions-and-answers">Questions And Answers</h2>
+        <div class="qa-list">
+          <details open>
+            <summary>Why not upload the PDF directly to an AI chat?</summary>
+            <p>That is often the best choice for a quick question or summary. Use Markdown Ready when you want local processing, a durable Markdown/JSON artifact, a repeatable batch workflow, or output that can move between different services and local tools.</p>
+          </details>
+          <details>
+            <summary>What happens when one page cannot be converted reliably?</summary>
+            <p>Page-local OCR problems normally do not discard the rest of the PDF. Markdown Ready continues, marks the affected page in the output, and writes a page issue report. Model, file-access, cancellation, and output-transaction failures still stop safely.</p>
+          </details>
+          <details>
+            <summary>Can a long conversion resume?</summary>
+            <p>PDFs use ten-page processing chunks. Clean completed chunks are checkpointed during an interrupted conversion and can be reused when the source and conversion settings still match. Chunks with warnings or incomplete output are processed again.</p>
+          </details>
+          <details>
+            <summary>Is Markdown Ready more accurate than a cloud AI?</summary>
+            <p>They serve different purposes, and no general accuracy advantage is claimed. Cloud AI can be excellent at understanding and explanation. Markdown Ready focuses on source-grounded, inspectable document conversion. OCR remains best-effort, especially for dense tables, formulas, handwriting, and poor scans.</p>
+          </details>
+          <details>
+            <summary>Does Markdown Ready upload documents or require an account?</summary>
+            <p>No. The app uses bundled local OCR models, does not require an account, and does not upload document contents to a cloud OCR API.</p>
+          </details>
+          <details>
+            <summary>Does Markdown Ready bypass copyright restrictions?</summary>
+            <p>No. Markdown Ready is a local file-conversion tool, not a rights-clearing service. Process only documents you are authorized to use and follow applicable copyright and other laws.</p>
+          </details>
+          <details>
+            <summary>What is the main tradeoff?</summary>
+            <p>Local OCR adds a preprocessing step, takes time, and can use sustained Mac resources. In return, you keep an inspectable output file that is independent of any one chat or cloud service.</p>
+          </details>
         </div>
 
         <h2>Contact</h2>

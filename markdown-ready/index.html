@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Convert PDFs, scanned pages, and document images into reviewable Markdown and optional JSON on Apple Silicon Macs. Two local OCR engines, no cloud OCR API.">
+    <meta name="description" content="A private, on-device document compiler for reusable Markdown and optional JSON on Apple Silicon Macs. Two local OCR engines, no cloud OCR API.">
     <title>Markdown Ready - PDF to Markdown on your Mac</title>
     <link rel="icon" href="/assets/markdown-ready-icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../styles.css">
@@ -27,7 +27,7 @@
             <p class="eyebrow">PDF to Markdown on your Mac</p>
             <h1>Markdown Ready</h1>
             <p class="lead">
-              Turn PDFs, scanned pages, and document images into structured Markdown you can review, edit, search, and reuse in AI, research, notes, wikis, and archives.
+              Compile PDFs, scanned pages, and document images into durable Markdown you can review, edit, search, archive, and reuse across AI and local workflows.
             </p>
             <p class="launch-strip">
               One-time purchase: $9.99. No subscription.
@@ -46,8 +46,30 @@
             <h2 id="copy-title">Still copying pages out of PDFs by hand?</h2>
           </div>
           <p>
-            Textbooks, research papers, scanned reports, old PDFs, and long source documents are painful to reuse when the content is trapped in page images or broken copy-paste output. Markdown Ready converts the document first, so you can inspect the structure before sending it into your notes, editor, AI tool, or archive.
+            Direct PDF chat is convenient for quick questions. Markdown Ready serves a different need: convert once, keep a reviewable file, and reuse the same output across chat services, local models, notes, wikis, RAG, and archives.
           </p>
+        </section>
+
+        <section class="section" aria-labelledby="compiler-title">
+          <div class="section-heading">
+            <p class="eyebrow">Local Document Compiler</p>
+            <h2 id="compiler-title">The output remains yours</h2>
+          </div>
+          <div class="feature-grid">
+            <section>
+              <h3>Convert once</h3>
+              <p>Prepare the source document before using it downstream instead of repeating the same extraction in each chat or service.</p>
+            </section>
+            <section>
+              <h3>Keep the artifact</h3>
+              <p>Save durable Markdown and optional JSON in a folder you choose, alongside the original document.</p>
+            </section>
+            <section>
+              <h3>Reuse anywhere</h3>
+              <p>Move the same inspectable output between chat, local models, notes, wikis, RAG, and archives.</p>
+            </section>
+          </div>
+          <p><a href="support/#questions-and-answers">Compare workflows and read the full Q&amp;A.</a></p>
         </section>
 
         <section class="section" aria-labelledby="features-title">
@@ -79,6 +101,10 @@
             <section>
               <h3>Local OCR</h3>
               <p>Documents are processed locally on Apple Silicon and written to the output folder you choose.</p>
+            </section>
+            <section>
+              <h3>Long-document resilience</h3>
+              <p>PDFs use ten-page chunks, clean-chunk checkpoints, and page issue reports so one difficult page does not normally discard the rest.</p>
             </section>
           </div>
         </section>
@@ -135,7 +161,7 @@
           </div>
         </section>
 
-        <section class="section" aria-labelledby="faq-title">
+        <section class="section" id="questions-and-answers" aria-labelledby="faq-title">
           <div class="section-heading">
             <p class="eyebrow">FAQ</p>
             <h2 id="faq-title">Common questions</h2>
@@ -152,6 +178,14 @@
             <section>
               <h3>How does folder input work?</h3>
               <p>Choose a folder under Input and press Start. Markdown Ready processes supported files directly inside that folder once. It does not recurse into subfolders or watch or poll for later changes.</p>
+            </section>
+            <section>
+              <h3>Why not upload the PDF directly to an AI chat?</h3>
+              <p>Direct chat is ideal for quick questions. Markdown Ready is for local processing and durable Markdown/JSON that you can inspect, archive, and reuse across tools.</p>
+            </section>
+            <section>
+              <h3>Does it bypass copyright restrictions?</h3>
+              <p>No. Process only documents you are authorized to use and follow applicable copyright and other laws.</p>
             </section>
           </div>
         </section>
