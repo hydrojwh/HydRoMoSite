@@ -98,7 +98,7 @@
         <ol>
           <li>Open Markdown Ready from the menu bar.</li>
           <li>Under Engine, choose GLM-OCR or PaddleOCR-VL.</li>
-          <li>Under Input, select a PDF, JPG/JPEG, PNG, or folder; use Save To for the destination.</li>
+          <li>Under Input, select a PDF, JPG/JPEG, PNG, or folder. You can also drag supported files into the menu-bar window. Use Save To for the destination.</li>
           <li>Choose Markdown and optional JSON, turn Tables on if needed, and set Existing behavior.</li>
           <li>Press Start; use Stop to cancel an active conversion.</li>
           <li>Use Output to review generated files.</li>
@@ -131,7 +131,7 @@
 
         <h2>Performance And Power</h2>
         <p>
-          Markdown Ready runs local OCR on your Mac. Large PDFs, image-heavy documents, and folder batches can use sustained CPU/GPU and unified memory. For long conversions, connect your Mac to power and avoid closing the lid.
+          Markdown Ready runs local OCR on your Mac. The supported target is an Apple Silicon Mac with 16 GB unified memory or more; 8 GB Macs are not currently validated or supported for the bundled vision-language models. Large PDFs, image-heavy documents, and folder batches can use sustained CPU/GPU and unified memory. For long conversions, connect your Mac to power and avoid closing the lid.
         </p>
 
         <h2>Accuracy And Review</h2>
@@ -178,6 +178,14 @@
           <details>
             <summary>Can a long conversion resume?</summary>
             <p>PDFs use ten-page processing chunks. Clean completed chunks are checkpointed during an interrupted conversion and can be reused when the source and conversion settings still match. Chunks with warnings or incomplete output are processed again.</p>
+          </details>
+          <details>
+            <summary>Why can the first conversion take longer?</summary>
+            <p>The selected local OCR model must load before page processing begins. The app shows model-loading and page progress, and later conversions with the same engine may start sooner while the model remains available. Timing varies by Mac, page count, page layout, and engine, so a fixed minutes-per-document estimate would be misleading.</p>
+          </details>
+          <details>
+            <summary>Does Markdown Ready support an 8 GB Mac?</summary>
+            <p>Not as a supported release configuration. Use an Apple Silicon Mac with 16 GB unified memory or more. The bundled vision-language models can put significant pressure on an 8 GB system, and that configuration has not completed the release validation gate.</p>
           </details>
           <details>
             <summary>Is Markdown Ready more accurate than a cloud AI?</summary>
