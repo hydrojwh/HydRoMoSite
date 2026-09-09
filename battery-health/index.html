@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Battery Health is a free menu-bar utility for Mac that shows charge, battery health, cycle count, and power adapter wattage — read locally, never uploaded.">
+    <title>Battery Health - Battery health in your Mac's menu bar</title>
+    <link rel="icon" href="/assets/battery-health-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <a class="brand" href="../" aria-label="HydRoMo home">
+          <img src="../assets/hydromo-logo.svg" alt="HydRoMo" width="160" height="110">
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="../#products">Products</a>
+          <a href="support/">Support</a>
+          <a href="privacy/">Privacy</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero product-hero">
+          <div>
+            <p class="eyebrow">Battery health in your menu bar</p>
+            <h1>Battery Health</h1>
+            <p class="lead">
+              See charge, battery health, cycle count, and power adapter wattage from a pulse-line icon in the menu bar. Everything is read locally on your Mac and never uploaded.
+            </p>
+            <p class="launch-strip">
+              Free on the Mac App Store. No account, no analytics, no network.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="support/">Read Support Guide</a>
+              <a class="button" href="privacy/">Privacy Policy</a>
+            </div>
+          </div>
+          <img class="app-icon" src="../assets/battery-health-icon.svg" alt="Battery Health app icon" width="180" height="180">
+        </section>
+
+        <section class="section split" aria-labelledby="why-title">
+          <div>
+            <p class="eyebrow">One click, four numbers</p>
+            <h2 id="why-title">The battery facts macOS keeps behind System Settings</h2>
+          </div>
+          <p>
+            macOS knows your battery's maximum capacity and cycle count, but shows them several clicks deep. Battery Health puts them one click away, with a colour cue for the health figure and a plain note on where the number comes from.
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="features-title">
+          <div class="section-heading">
+            <p class="eyebrow">What you see</p>
+            <h2 id="features-title">A small dashboard, nothing more</h2>
+          </div>
+          <div class="feature-grid">
+            <section>
+              <h3>Charge</h3>
+              <p>The current charge level, with a one-click link to the Battery pane in System Settings for charging options.</p>
+            </section>
+            <section>
+              <h3>Battery health</h3>
+              <p>Maximum capacity as a percentage of design capacity: green above 80%, orange at 80%, red below. Tap the info icon to see the legend and how the figure was derived.</p>
+            </section>
+            <section>
+              <h3>Cycle count</h3>
+              <p>The number of charge cycles the battery has completed.</p>
+            </section>
+            <section>
+              <h3>Power adapter</h3>
+              <p>The rated wattage of the connected adapter, updated the moment you plug in or unplug. A dock that reports no wattage shows as Connected.</p>
+            </section>
+            <section>
+              <h3>Condition</h3>
+              <p>Shown only when macOS reports a battery condition, so you never see a guessed value.</p>
+            </section>
+            <section>
+              <h3>Launch at Login</h3>
+              <p>One switch on the dashboard, registered through the standard macOS login-item service.</p>
+            </section>
+          </div>
+        </section>
+
+        <section class="section split" aria-labelledby="local-title">
+          <div>
+            <p class="eyebrow">Private by design</p>
+            <h2 id="local-title">Read locally, stored nowhere</h2>
+          </div>
+          <p>
+            Battery Health reads a short, fixed list of battery values that macOS already exposes and shows them on screen. It has no account, no analytics, no network access, and keeps no battery history. When macOS does not provide a value, the app shows "Unavailable" rather than estimating one.
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="sources-title">
+          <div class="section-heading">
+            <p class="eyebrow">Where the numbers come from</p>
+            <h2 id="sources-title">Exactly what the app reads</h2>
+          </div>
+          <div class="feature-grid">
+            <section>
+              <h3>Charge and power source</h3>
+              <p>The macOS power sources API: current and maximum charge for the percentage, and whether the Mac is on AC or battery.</p>
+            </section>
+            <section>
+              <h3>Adapter wattage</h3>
+              <p>Only the rated-watts value from the adapter details API. Adapter identifiers and serial numbers are never read.</p>
+            </section>
+            <section>
+              <h3>Health and cycles</h3>
+              <p>Seven battery properties from the system battery service: cycle count, design capacity, full-charge capacity, reported maximum capacity, and the battery condition strings.</p>
+            </section>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="notes-title">
+          <div class="section-heading">
+            <p class="eyebrow">Honest limits</p>
+            <h2 id="notes-title">What Battery Health does not do</h2>
+          </div>
+          <div class="feature-grid">
+            <section>
+              <h3>Rated watts, not live power</h3>
+              <p>The Power adapter row shows the adapter's rating. A 67 W adapter reads 67 W whether it is delivering 63 W or nothing at all.</p>
+            </section>
+            <section>
+              <h3>No charging control</h3>
+              <p>Charge limits are managed by macOS. The link beside Charge takes you to System Settings, where those options live.</p>
+            </section>
+            <section>
+              <h3>Built-in battery required</h3>
+              <p>Battery Health is for MacBook Air and MacBook Pro running macOS 14 or later. On a desktop Mac it reports that battery information is unavailable.</p>
+            </section>
+          </div>
+        </section>
+
+        <section class="section" id="questions-and-answers" aria-labelledby="faq-title">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-title">Common questions</h2>
+          </div>
+          <div class="support-list">
+            <section>
+              <h3>Why does the health figure differ from another app?</h3>
+              <p>Apps differ in which capacity values they divide. Battery Health divides full-charge capacity by design capacity when both are available and says so; if only a reported maximum capacity exists, it shows that value and labels it "Reported by macOS".</p>
+            </section>
+            <section>
+              <h3>How often does it refresh?</h3>
+              <p>Health and cycle values refresh once an hour or when you click Refresh. Adapter changes are picked up immediately when you plug in or unplug.</p>
+            </section>
+            <section>
+              <h3>Does it send anything anywhere?</h3>
+              <p>No. The app has no network access. The only outbound action is the optional "Report an Issue" button, which opens a pre-filled draft in your own mail client that you can edit or discard.</p>
+            </section>
+            <section>
+              <h3>Why is the menu-bar icon white rather than coloured?</h3>
+              <p>So it matches the other status items and stays legible on light and dark menu bars. The health colour is shown inside the dashboard.</p>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>&copy; 2026 HydRoMo. All rights reserved.</span>
+        <span><a href="mailto:support@hydromo.dev">support@hydromo.dev</a></span>
+      </footer>
+    </div>
+  </body>
+</html>

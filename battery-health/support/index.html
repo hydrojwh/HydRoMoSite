@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How to use Battery Health on your Mac: what each dashboard row means, how the health percentage is derived, Launch at Login, and troubleshooting.">
+    <title>Battery Health Support</title>
+    <link rel="icon" href="/assets/battery-health-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <a class="brand" href="../../" aria-label="HydRoMo home">
+          <img src="../../assets/hydromo-logo.svg" alt="HydRoMo" width="160" height="110">
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="../">Battery Health</a>
+          <a href="./">Support</a>
+          <a href="../privacy/">Privacy</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <p class="eyebrow">Support</p>
+        <h1>Battery Health Support</h1>
+        <p>
+          Battery Health is a free macOS menu-bar utility that shows your Mac's charge, battery health, cycle count, and power adapter wattage. It reads these values locally and never uploads them.
+        </p>
+
+        <h2>Requirements</h2>
+        <ul>
+          <li>A Mac with a built-in battery (MacBook Air or MacBook Pro).</li>
+          <li>macOS 14 Sonoma or later.</li>
+        </ul>
+
+        <h2>Quick Start</h2>
+        <ol>
+          <li>Open Battery Health from Launchpad or the Applications folder. A pulse-line battery icon appears in the menu bar.</li>
+          <li>Click the icon to open the dashboard.</li>
+          <li>Click Refresh (the circular arrow) to re-read the values now; they also refresh automatically once an hour.</li>
+          <li>Use the info icon at the bottom left for About, and the power icon at the bottom right to quit.</li>
+        </ol>
+
+        <h2>What Each Row Means</h2>
+        <div class="support-list">
+          <section>
+            <h3>Charge</h3>
+            <p>The current charge level. The link icon beside it opens the Battery pane in System Settings, where macOS charging options live.</p>
+          </section>
+          <section>
+            <h3>Battery health</h3>
+            <p>Maximum capacity as a percentage of the battery's design capacity. Green means above 80%, orange exactly 80%, red below 80%, gray when unavailable. The info icon beside the label shows this legend and the source of the figure: "Calculated from full/design capacity" when both values are available, or "Reported by macOS" when only a reported maximum capacity exists.</p>
+          </section>
+          <section>
+            <h3>Cycle count</h3>
+            <p>The number of charge cycles the battery has completed, as reported by macOS.</p>
+          </section>
+          <section>
+            <h3>Power adapter</h3>
+            <p>The rated wattage of the connected adapter, for example "67 W". This is the adapter's rating, not the power being delivered right now. "Not connected" means the Mac is on battery. "Connected" means the Mac is on AC power through an adapter, dock, or hub that does not report a wattage.</p>
+          </section>
+          <section>
+            <h3>Condition</h3>
+            <p>Appears only when macOS reports a battery condition such as "Normal" or "Service Recommended". If macOS provides nothing, the row is omitted rather than guessed.</p>
+          </section>
+          <section>
+            <h3>Launch at Login</h3>
+            <p>Starts Battery Health automatically when you log in. The switch registers the app with the macOS login-item service; you can also review it under System Settings › General › Login Items &amp; Extensions.</p>
+          </section>
+        </div>
+
+        <h2>Troubleshooting</h2>
+        <div class="support-list">
+          <section>
+            <h3>I don't see the icon in the menu bar</h3>
+            <p>Confirm the app is running (it appears in the Dock while open). If the menu bar is crowded, macOS may hide items; make room by removing or rearranging other status items, or check the notch area on MacBook Pro models with a display cutout.</p>
+          </section>
+          <section>
+            <h3>A value shows "Unavailable"</h3>
+            <p>macOS did not provide that value for your Mac. Battery Health never estimates a missing value. Try Refresh; if it stays unavailable, the information is not exposed by the system on this model.</p>
+          </section>
+          <section>
+            <h3>"Battery information is temporarily unavailable."</h3>
+            <p>The app could not read the battery service. On a desktop Mac this is expected. On a MacBook, click Refresh; if it persists after a restart, please report it.</p>
+          </section>
+          <section>
+            <h3>Launch at Login does not start the app</h3>
+            <p>Make sure Battery Health is installed in the Applications folder and that it is allowed under System Settings › General › Login Items &amp; Extensions. Turn the switch off and on again to re-register.</p>
+          </section>
+          <section>
+            <h3>The health percentage differs from another app</h3>
+            <p>Apps divide different capacity values. Battery Health shows its method under the info icon so you can compare like with like.</p>
+          </section>
+        </div>
+
+        <h2>Privacy</h2>
+        <p>
+          Battery Health reads a fixed list of battery values locally and stores nothing. It has no account, analytics, or network access. See the
+          <a href="../privacy/">Battery Health Privacy Policy</a>.
+        </p>
+
+        <h2>Report an Issue</h2>
+        <p>
+          In the app, open About (info icon, bottom left) and choose "Report an Issue…". It opens a draft in your mail client with the app and macOS versions filled in; add what you saw and what you expected. You can also write to <a href="mailto:support@hydromo.dev">support@hydromo.dev</a> directly. Helpful details: Mac model, macOS version, the app version shown in About, and a screenshot of the dashboard.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          For support, contact <a href="mailto:support@hydromo.dev">support@hydromo.dev</a>.
+        </p>
+      </main>
+
+      <footer class="footer">
+        <span>&copy; 2026 HydRoMo. All rights reserved.</span>
+        <span><a href="mailto:support@hydromo.dev">support@hydromo.dev</a></span>
+      </footer>
+    </div>
+  </body>
+</html>

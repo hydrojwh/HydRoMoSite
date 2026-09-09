@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Battery Health reads battery information locally on your Mac and collects no data. No account, no analytics, no network access, no stored history.">
+    <title>Battery Health Privacy Policy</title>
+    <link rel="icon" href="/assets/battery-health-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <a class="brand" href="../../" aria-label="HydRoMo home">
+          <img src="../../assets/hydromo-logo.svg" alt="HydRoMo" width="160" height="110">
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="../">Battery Health</a>
+          <a href="../support/">Support</a>
+          <a href="./">Privacy</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <p class="eyebrow">Privacy</p>
+        <h1>Battery Health Privacy Policy</h1>
+        <p>Last updated: September 9, 2026</p>
+
+        <p>
+          Battery Health is a macOS menu-bar utility by HydRoMo. It shows your Mac's current charge, battery health, cycle count, and power adapter wattage using battery information that macOS already provides on the device.
+        </p>
+
+        <h2>Data Collection</h2>
+        <p>
+          Battery Health does not collect any data. The app has no account login, no advertising, no tracking, no analytics, and no network access. Nothing you see in the app leaves your Mac.
+        </p>
+
+        <h2>What the App Reads</h2>
+        <p>
+          Battery Health reads a fixed, short list of values from macOS and displays them. It reads only these:
+        </p>
+        <ul>
+          <li>From the macOS power sources API: current charge, maximum charge, charging state, and whether the Mac is on AC or battery power.</li>
+          <li>From the power adapter details API: the adapter's rated wattage only. Adapter identifiers, serial numbers, and family codes are not read.</li>
+          <li>From the system battery service: cycle count, design capacity, full-charge capacity, reported maximum capacity, and the battery condition strings.</li>
+        </ul>
+        <p>
+          The app never reads device identifiers, serial numbers, or raw system dictionaries, and it never writes these values to disk.
+        </p>
+
+        <h2>Local Storage</h2>
+        <p>
+          Battery Health stores no settings, history, or cached readings on your Mac. The Launch at Login switch registers or unregisters the app with the standard macOS login-item service; that registration is held by macOS, not by the app.
+        </p>
+
+        <h2>Network Access</h2>
+        <p>
+          The app makes no network connections. Under App Sandbox it has no network entitlement.
+        </p>
+
+        <h2>Support</h2>
+        <p>
+          The "Report an Issue" button in About opens a new message in your own mail client, pre-filled with the app version and macOS version. Nothing is sent until you choose to send it, and you can edit or discard the draft. If you contact support, information you choose to include, such as your email address, Mac model, or screenshots, is used only to respond to your request.
+        </p>
+
+        <h2>Third-Party Components</h2>
+        <p>
+          Battery Health is built only with Apple's system frameworks. It includes no third-party libraries, SDKs, or analytics components.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+          This policy may be updated as Battery Health changes. If the app's data practices ever change, its App Store privacy information and this policy will be updated accordingly.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          For privacy or support questions, contact HydRoMo at
+          <a href="mailto:support@hydromo.dev">support@hydromo.dev</a>.
+        </p>
+      </main>
+
+      <footer class="footer">
+        <span>&copy; 2026 HydRoMo. All rights reserved.</span>
+        <span><a href="mailto:support@hydromo.dev">support@hydromo.dev</a></span>
+      </footer>
+    </div>
+  </body>
+</html>

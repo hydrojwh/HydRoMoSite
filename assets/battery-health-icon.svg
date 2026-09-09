@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Battery Health app icon (SVG master, 1024x1024)
+  Coral radial gradient with a white pulse-line battery; macOS applies the icon mask.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0%" stop-color="#FF5733"/>
+      <stop offset="100%" stop-color="#FF9A76"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <g fill="none" stroke="#FFFFFF" stroke-width="72" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="210" y="350" width="554" height="324" rx="82"/>
+    <path d="M 804 452 L 804 572"/>
+  </g>
+  <path d="M 300 512 H 390 L 430 440 L 488 592 L 550 452 L 590 512 H 680"
+        fill="none" stroke="#FFFFFF" stroke-width="48"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
