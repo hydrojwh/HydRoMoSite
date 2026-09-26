@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Learn how to use Markdown Ready, choose an engine and input, run file or one-time folder conversion, and understand local OCR limitations.">
-    <title>Markdown Ready Support</title>
+    <script>try{var l=localStorage.getItem("hydromo-lang");if(l!=="ko"&&l!=="en")l="en";document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l);}catch(e){}</script>
+    <meta name="description" content="Learn how to use Markdown Ready, choose an engine and input, run file or one-time folder conversion, and understand local OCR limitations." data-ko="Markdown Ready 사용법: 엔진과 입력 선택, 파일·일회성 폴더 변환 실행, 로컬 OCR의 한계 이해까지 안내합니다.">
+    <title data-ko="Markdown Ready 지원">Markdown Ready Support</title>
     <link rel="icon" href="/assets/markdown-ready-icon.svg" type="image/svg+xml">
     <link rel="canonical" href="https://hydromo.dev/markdown-ready/support/">
     <meta property="og:type" content="website">
@@ -19,6 +20,7 @@
     <link rel="alternate icon" type="image/png" href="/assets/favicon-64.png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="stylesheet" href="../../styles.css">
+    <script src="../../lang.js" defer></script>
     <style>
       .comparison-cards { display: grid; gap: 16px; margin: 24px 0 36px; }
       .comparison-card { border: 1px solid var(--line); border-radius: 14px; padding: 20px; background: var(--panel); }
@@ -45,181 +47,194 @@
         </a>
         <nav class="nav-links" aria-label="Main navigation">
           <a href="../">Markdown Ready</a>
-          <a href="./">Support</a>
-          <a href="../privacy/">Privacy</a>
+          <a href="./"><span class="en">Support</span><span class="ko">지원</span></a>
+          <a href="../privacy/"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
+          <button id="lang-toggle" class="lang-toggle" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 3.1 2.7 14.9 0 18M12 3c-2.7 3.1-2.7 14.9 0 18"/></svg>
+            <span class="lang-toggle-label">한국어</span>
+          </button>
         </nav>
       </header>
 
       <main class="content">
-        <p class="eyebrow">Support</p>
-        <h1>Markdown Ready Support</h1>
+        <p class="eyebrow"><span class="en">Support</span><span class="ko">지원</span></p>
+        <h1><span class="en">Markdown Ready Support</span><span class="ko">Markdown Ready 지원</span></h1>
         <p>
-          Markdown Ready is a private, on-device document compiler for macOS. It converts PDFs, scanned pages, and document images into durable Markdown and optional JSON files that you can inspect, edit, archive, and reuse.
+          <span class="en">Markdown Ready is a private, on-device document compiler for macOS. It converts PDFs, scanned pages, and document images into durable Markdown and optional JSON files that you can inspect, edit, archive, and reuse.</span>
+          <span class="ko">Markdown Ready는 macOS용 온디바이스 문서 컴파일러입니다. PDF, 스캔 문서, 문서 이미지를 검사·편집·보관·재사용할 수 있는 안정적인 Markdown과 선택적 JSON 파일로 변환합니다.</span>
         </p>
 
-        <h2>Why Markdown Ready?</h2>
+        <h2><span class="en">Why Markdown Ready?</span><span class="ko">왜 Markdown Ready인가?</span></h2>
         <p>
-          Direct PDF chat and Markdown Ready solve different jobs. Direct chat is ideal for a quick question or summary. Markdown Ready is for converting once, keeping the result, and reusing the same local document artifact across services and tools.
+          <span class="en">Direct PDF chat and Markdown Ready solve different jobs. Direct chat is ideal for a quick question or summary. Markdown Ready is for converting once, keeping the result, and reusing the same local document artifact across services and tools.</span>
+          <span class="ko">PDF 직접 챗과 Markdown Ready는 다른 일을 합니다. 빠른 질문이나 요약에는 직접 챗이 맞습니다. Markdown Ready는 한 번 변환해 결과를 남기고, 같은 로컬 문서 산출물을 여러 서비스와 도구에서 재사용하기 위한 도구입니다.</span>
         </p>
         <div class="comparison-cards">
           <article class="comparison-card">
-            <h3>PDF once, then ask</h3>
+            <h3><span class="en">PDF once, then ask</span><span class="ko">PDF는 한 번만, 그다음은 질문</span></h3>
             <div class="comparison-columns">
-              <section><h4>Direct PDF chat</h4><p>Fast and convenient for questions, summaries, and interactive reasoning.</p></section>
-              <section><h4>Markdown Ready</h4><p>Adds a conversion step before you work with the document.</p></section>
+              <section><h4><span class="en">Direct PDF chat</span><span class="ko">PDF 직접 챗</span></h4><p><span class="en">Fast and convenient for questions, summaries, and interactive reasoning.</span><span class="ko">질문·요약·대화형 추론에 빠르고 편리합니다.</span></p></section>
+              <section><h4>Markdown Ready</h4><p><span class="en">Adds a conversion step before you work with the document.</span><span class="ko">문서를 다루기 전에 변환 단계가 한 번 추가됩니다.</span></p></section>
             </div>
           </article>
           <article class="comparison-card">
-            <h3>Keep a durable result</h3>
+            <h3><span class="en">Keep a durable result</span><span class="ko">남는 결과물</span></h3>
             <div class="comparison-columns">
-              <section><h4>Direct PDF chat</h4><p>Answers stay inside a conversation and may vary with the prompt or service.</p></section>
-              <section><h4>Markdown Ready</h4><p>Creates reusable <code>.md</code> and optional <code>.json</code> files in a folder you choose.</p></section>
+              <section><h4><span class="en">Direct PDF chat</span><span class="ko">PDF 직접 챗</span></h4><p><span class="en">Answers stay inside a conversation and may vary with the prompt or service.</span><span class="ko">답변은 대화 안에만 남고 프롬프트나 서비스에 따라 달라질 수 있습니다.</span></p></section>
+              <section><h4>Markdown Ready</h4><p><span class="en">Creates reusable <code>.md</code> and optional <code>.json</code> files in a folder you choose.</span><span class="ko">재사용 가능한 <code>.md</code>와 선택적 <code>.json</code> 파일을 직접 고른 폴더에 만듭니다.</span></p></section>
             </div>
           </article>
           <article class="comparison-card">
-            <h3>Choose where processing happens</h3>
+            <h3><span class="en">Choose where processing happens</span><span class="ko">처리 위치 선택</span></h3>
             <div class="comparison-columns">
-              <section><h4>Direct PDF chat</h4><p>The document is sent to a cloud service for processing.</p></section>
-              <section><h4>Markdown Ready</h4><p>Bundled OCR models process selected documents locally on your Mac.</p></section>
+              <section><h4><span class="en">Direct PDF chat</span><span class="ko">PDF 직접 챗</span></h4><p><span class="en">The document is sent to a cloud service for processing.</span><span class="ko">문서가 클라우드 서비스로 전송되어 처리됩니다.</span></p></section>
+              <section><h4>Markdown Ready</h4><p><span class="en">Bundled OCR models process selected documents locally on your Mac.</span><span class="ko">내장 OCR 모델이 선택한 문서를 Mac에서 로컬로 처리합니다.</span></p></section>
             </div>
           </article>
           <article class="comparison-card">
-            <h3>Run batches and long jobs</h3>
+            <h3><span class="en">Run batches and long jobs</span><span class="ko">배치와 긴 작업</span></h3>
             <div class="comparison-columns">
-              <section><h4>Direct PDF chat</h4><p>File, context, policy, and usage limits depend on the service.</p></section>
-              <section><h4>Markdown Ready</h4><p>Processes local files or a flat-folder batch and uses ten-page chunks for PDFs.</p></section>
+              <section><h4><span class="en">Direct PDF chat</span><span class="ko">PDF 직접 챗</span></h4><p><span class="en">File, context, policy, and usage limits depend on the service.</span><span class="ko">파일·컨텍스트·정책·사용량 제한은 서비스마다 다릅니다.</span></p></section>
+              <section><h4>Markdown Ready</h4><p><span class="en">Processes local files or a flat-folder batch and uses ten-page chunks for PDFs.</span><span class="ko">로컬 파일이나 단일 폴더 배치를 처리하며 PDF는 10페이지 청크를 사용합니다.</span></p></section>
             </div>
           </article>
           <article class="comparison-card">
-            <h3>See what needs review</h3>
+            <h3><span class="en">See what needs review</span><span class="ko">뭘 검토해야 할지 보임</span></h3>
             <div class="comparison-columns">
-              <section><h4>Direct PDF chat</h4><p>Processing and recovery behavior are managed by the service.</p></section>
-              <section><h4>Markdown Ready</h4><p>Retains clean chunk checkpoints and reports page-level failures or quality warnings.</p></section>
+              <section><h4><span class="en">Direct PDF chat</span><span class="ko">PDF 직접 챗</span></h4><p><span class="en">Processing and recovery behavior are managed by the service.</span><span class="ko">처리와 복구 동작은 서비스가 관리합니다.</span></p></section>
+              <section><h4>Markdown Ready</h4><p><span class="en">Retains clean chunk checkpoints and reports page-level failures or quality warnings.</span><span class="ko">완료 청크 체크포인트를 남기고 페이지 단위 실패·품질 경고를 보고합니다.</span></p></section>
             </div>
           </article>
           <article class="comparison-card">
-            <h3>Reuse across tools</h3>
+            <h3><span class="en">Reuse across tools</span><span class="ko">도구 간 재사용</span></h3>
             <div class="comparison-columns">
-              <section><h4>Direct PDF chat</h4><p>You may need to upload the source again or retain it in a service project.</p></section>
-              <section><h4>Markdown Ready</h4><p>The same Markdown can move between chat, local models, notes, wikis, RAG, and archives.</p></section>
+              <section><h4><span class="en">Direct PDF chat</span><span class="ko">PDF 직접 챗</span></h4><p><span class="en">You may need to upload the source again or retain it in a service project.</span><span class="ko">원본을 다시 올리거나 서비스 프로젝트에 남겨둬야 할 수 있습니다.</span></p></section>
+              <section><h4>Markdown Ready</h4><p><span class="en">The same Markdown can move between chat, local models, notes, wikis, RAG, and archives.</span><span class="ko">같은 Markdown을 챗, 로컬 모델, 노트, 위키, RAG, 아카이브로 옮겨 쓸 수 있습니다.</span></p></section>
             </div>
           </article>
         </div>
 
-        <h2>Quick Start</h2>
+        <h2><span class="en">Quick Start</span><span class="ko">빠른 시작</span></h2>
         <ol>
-          <li>Open Markdown Ready from the menu bar.</li>
-          <li>Under Engine, choose GLM-OCR or PaddleOCR-VL.</li>
-          <li>Under Input, select a PDF, JPG/JPEG, PNG, or folder. You can also drag supported files into the menu-bar window. Use Save To for the destination.</li>
-          <li>Choose Markdown and optional JSON, turn Tables on if needed, and set Existing behavior.</li>
-          <li>Press Start; use Stop to cancel an active conversion.</li>
-          <li>Use Output to review generated files.</li>
-          <li>About shows product and license information; Quit closes the app.</li>
+          <li><span class="en">Open Markdown Ready from the menu bar.</span><span class="ko">메뉴 막대에서 Markdown Ready를 엽니다.</span></li>
+          <li><span class="en">Under Engine, choose GLM-OCR or PaddleOCR-VL.</span><span class="ko">Engine에서 GLM-OCR 또는 PaddleOCR-VL을 고릅니다.</span></li>
+          <li><span class="en">Under Input, select a PDF, JPG/JPEG, PNG, or folder. You can also drag supported files into the menu-bar window. Use Save To for the destination.</span><span class="ko">Input에서 PDF, JPG/JPEG, PNG 또는 폴더를 선택합니다. 지원 파일을 메뉴 막대 창에 끌어다 놓아도 됩니다. 저장 위치는 Save To로 정합니다.</span></li>
+          <li><span class="en">Choose Markdown and optional JSON, turn Tables on if needed, and set Existing behavior.</span><span class="ko">Markdown과 선택적 JSON을 고르고, 필요하면 Tables를 켜고, Existing 동작을 정합니다.</span></li>
+          <li><span class="en">Press Start; use Stop to cancel an active conversion.</span><span class="ko">Start를 누릅니다. 진행 중인 변환은 Stop으로 취소할 수 있습니다.</span></li>
+          <li><span class="en">Use Output to review generated files.</span><span class="ko">Output에서 생성된 파일을 확인합니다.</span></li>
+          <li><span class="en">About shows product and license information; Quit closes the app.</span><span class="ko">About에서 제품·라이선스 정보를 볼 수 있고, Quit으로 앱을 종료합니다.</span></li>
         </ol>
 
-        <h2>Supported Inputs</h2>
+        <h2><span class="en">Supported Inputs</span><span class="ko">지원 입력</span></h2>
         <ul>
           <li>PDF</li>
           <li>JPG/JPEG</li>
           <li>PNG</li>
-          <li>Folders containing supported document files</li>
+          <li><span class="en">Folders containing supported document files</span><span class="ko">지원 문서 파일이 들어 있는 폴더</span></li>
         </ul>
 
-        <h2>Supported Outputs</h2>
+        <h2><span class="en">Supported Outputs</span><span class="ko">지원 출력</span></h2>
         <ul>
           <li>Markdown (<code>.md</code>)</li>
-          <li>Optional JSON sidecar (<code>.json</code>)</li>
+          <li><span class="en">Optional JSON sidecar (<code>.json</code>)</span><span class="ko">선택적 JSON 사이드카 (<code>.json</code>)</span></li>
         </ul>
 
-        <h2>One-Time Folder Batches</h2>
+        <h2><span class="en">One-Time Folder Batches</span><span class="ko">일회성 폴더 배치</span></h2>
         <p>
-          Choose an input folder and a Save To folder, then press Start. Markdown Ready enumerates supported files directly inside the input folder and processes that flat list once.
+          <span class="en">Choose an input folder and a Save To folder, then press Start. Markdown Ready enumerates supported files directly inside the input folder and processes that flat list once.</span>
+          <span class="ko">입력 폴더와 Save To 폴더를 고르고 Start를 누르면, Markdown Ready가 입력 폴더 바로 안의 지원 파일을 모아 그 목록을 한 번 처리합니다.</span>
         </p>
         <ul>
-          <li>Subfolders are not traversed.</li>
-          <li>The app does not watch or poll the folder after the run starts or completes.</li>
-          <li>Use Existing to choose whether matching output is skipped or overwritten.</li>
+          <li><span class="en">Subfolders are not traversed.</span><span class="ko">하위 폴더는 탐색하지 않습니다.</span></li>
+          <li><span class="en">The app does not watch or poll the folder after the run starts or completes.</span><span class="ko">실행 시작 후나 완료 후에 폴더를 지켜보거나 폴링하지 않습니다.</span></li>
+          <li><span class="en">Use Existing to choose whether matching output is skipped or overwritten.</span><span class="ko">Existing에서 해당 출력을 건너뛸지 덮어쓸지 정할 수 있습니다.</span></li>
         </ul>
 
-        <h2>Performance And Power</h2>
+        <h2><span class="en">Performance And Power</span><span class="ko">성능과 전원</span></h2>
         <p>
-          Markdown Ready runs local OCR on your Mac. The supported target is an Apple Silicon Mac with 16 GB unified memory or more; 8 GB Macs are not currently validated or supported for the bundled vision-language models. Large PDFs, image-heavy documents, and folder batches can use sustained CPU/GPU and unified memory. For long conversions, connect your Mac to power and avoid closing the lid.
+          <span class="en">Markdown Ready runs local OCR on your Mac. The supported target is an Apple Silicon Mac with 16 GB unified memory or more; 8 GB Macs are not currently validated or supported for the bundled vision-language models. Large PDFs, image-heavy documents, and folder batches can use sustained CPU/GPU and unified memory. For long conversions, connect your Mac to power and avoid closing the lid.</span>
+          <span class="ko">Markdown Ready는 Mac에서 로컬 OCR을 돌립니다. 지원 대상은 통합 메모리 16GB 이상의 Apple Silicon Mac이며, 8GB Mac은 내장 비전-언어 모델에 대해 검증·지원되지 않습니다. 큰 PDF, 이미지가 많은 문서, 폴더 배치는 CPU/GPU와 통합 메모리를 지속적으로 사용할 수 있습니다. 긴 변환에는 Mac을 전원에 연결하고 덮개를 닫지 마세요.</span>
         </p>
 
-        <h2>Accuracy And Review</h2>
+        <h2><span class="en">Accuracy And Review</span><span class="ko">정확도와 검토</span></h2>
         <p>
-          OCR output can contain mistakes. Complex tables, equations, handwriting, poor scans, screenshots, rotated pages, and tiny text need review. Markdown Ready prepares documents for reuse; it does not verify facts or replace human judgment.
+          <span class="en">OCR output can contain mistakes. Complex tables, equations, handwriting, poor scans, screenshots, rotated pages, and tiny text need review. Markdown Ready prepares documents for reuse; it does not verify facts or replace human judgment.</span>
+          <span class="ko">OCR 결과에는 오류가 있을 수 있습니다. 복잡한 표, 수식, 필기, 품질 낮은 스캔본, 스크린샷, 회전된 페이지, 작은 글씨는 검토가 필요합니다. Markdown Ready는 재사용을 위한 문서를 준비할 뿐, 사실 검증이나 사람의 판단을 대체하지 않습니다.</span>
         </p>
 
-        <h2>Privacy</h2>
+        <h2><span class="en">Privacy</span><span class="ko">개인정보</span></h2>
         <p>
-          The app processes selected documents locally and does not upload document contents to a cloud OCR API. Settings, selected folder access bookmarks, and local conversion history are stored on your Mac. Review the
-          <a href="../privacy/">Markdown Ready Privacy Policy</a> for details.
+          <span class="en">The app processes selected documents locally and does not upload document contents to a cloud OCR API. Settings, selected folder access bookmarks, and local conversion history are stored on your Mac. Review the</span>
+          <span class="ko">앱은 선택한 문서를 로컬로 처리하며 문서 내용을 클라우드 OCR API로 업로드하지 않습니다. 설정, 선택한 폴더 접근 북마크, 로컬 변환 기록은 Mac에 저장됩니다. 자세한 내용은</span>
+          <a href="../privacy/"><span class="en">Markdown Ready Privacy Policy</span><span class="ko">Markdown Ready 개인정보처리방침</span></a>
+          <span class="en"> for details.</span>
+          <span class="ko">을 확인해 주세요.</span>
         </p>
 
-        <h2>Troubleshooting</h2>
+        <h2><span class="en">Troubleshooting</span><span class="ko">문제 해결</span></h2>
         <div class="support-list">
           <section>
-            <h3>The app cannot access a folder after relaunch</h3>
-            <p>Choose the input/output folder again from the app so macOS can refresh the user-selected folder permission.</p>
+            <h3><span class="en">The app cannot access a folder after relaunch</span><span class="ko">재실행 후 폴더에 접근하지 못해요</span></h3>
+            <p><span class="en">Choose the input/output folder again from the app so macOS can refresh the user-selected folder permission.</span><span class="ko">앱에서 입력·출력 폴더를 다시 선택해 macOS의 사용자 지정 폴더 권한을 갱신해 주세요.</span></p>
           </section>
           <section>
-            <h3>Conversion is slow</h3>
-            <p>Large documents can take time because OCR runs locally. Try a smaller test file first, keep the Mac connected to power, and avoid running other heavy workloads at the same time.</p>
+            <h3><span class="en">Conversion is slow</span><span class="ko">변환이 느려요</span></h3>
+            <p><span class="en">Large documents can take time because OCR runs locally. Try a smaller test file first, keep the Mac connected to power, and avoid running other heavy workloads at the same time.</span><span class="ko">OCR이 로컬에서 돌기 때문에 큰 문서는 시간이 걸릴 수 있습니다. 작은 테스트 파일로 먼저 확인하고, Mac을 전원에 연결하며, 무거운 작업을 함께 돌리지 마세요.</span></p>
           </section>
           <section>
-            <h3>Output is missing a table or formula</h3>
-            <p>Turn Tables on, convert again, and review the output. Very complex tables and formulas may still need manual correction.</p>
+            <h3><span class="en">Output is missing a table or formula</span><span class="ko">출력에 표나 수식이 빠졌어요</span></h3>
+            <p><span class="en">Turn Tables on, convert again, and review the output. Very complex tables and formulas may still need manual correction.</span><span class="ko">Tables를 켜고 다시 변환한 뒤 결과를 확인하세요. 매우 복잡한 표와 수식은 여전히 수동 수정이 필요할 수 있습니다.</span></p>
           </section>
           <section>
-            <h3>I do not see a new file in the output folder</h3>
-            <p>Confirm that an output folder is selected, the source file type is supported, and the app has permission to access both folders.</p>
+            <h3><span class="en">I do not see a new file in the output folder</span><span class="ko">출력 폴더에 새 파일이 없어요</span></h3>
+            <p><span class="en">Confirm that an output folder is selected, the source file type is supported, and the app has permission to access both folders.</span><span class="ko">출력 폴더가 선택돼 있는지, 원본 파일 형식이 지원되는지, 앱이 두 폴더 모두에 접근 권한을 가지고 있는지 확인해 주세요.</span></p>
           </section>
         </div>
 
-        <h2 id="questions-and-answers">Questions And Answers</h2>
+        <h2 id="questions-and-answers"><span class="en">Questions And Answers</span><span class="ko">질문과 답변</span></h2>
         <div class="qa-list">
           <details open>
-            <summary>Why not upload the PDF directly to an AI chat?</summary>
-            <p>That is often the best choice for a quick question or summary. Use Markdown Ready when you want local processing, a durable Markdown/JSON artifact, a repeatable batch workflow, or output that can move between different services and local tools.</p>
+            <summary><span class="en">Why not upload the PDF directly to an AI chat?</span><span class="ko">PDF를 AI 챗에 직접 올리면 안 되나요?</span></summary>
+            <p><span class="en">That is often the best choice for a quick question or summary. Use Markdown Ready when you want local processing, a durable Markdown/JSON artifact, a repeatable batch workflow, or output that can move between different services and local tools.</span><span class="ko">빠른 질문이나 요약이라면 그게 최선일 때가 많습니다. 로컬 처리, 남는 Markdown/JSON 산출물, 반복 가능한 배치 워크플로, 또는 서비스와 로컬 도구 사이를 옮겨 다니는 출력이 필요할 때 Markdown Ready를 쓰세요.</span></p>
           </details>
           <details>
-            <summary>What happens when one page cannot be converted reliably?</summary>
-            <p>Page-local OCR problems normally do not discard the rest of the PDF. Markdown Ready continues, marks the affected page in the output, and writes a page issue report. Model, file-access, cancellation, and output-transaction failures still stop safely.</p>
+            <summary><span class="en">What happens when one page cannot be converted reliably?</span><span class="ko">한 페이지를 안정적으로 변환하지 못하면 어떻게 되나요?</span></summary>
+            <p><span class="en">Page-local OCR problems normally do not discard the rest of the PDF. Markdown Ready continues, marks the affected page in the output, and writes a page issue report. Model, file-access, cancellation, and output-transaction failures still stop safely.</span><span class="ko">페이지 단위 OCR 문제가 나머지 PDF를 날리지는 않습니다. Markdown Ready는 계속 진행하고, 해당 페이지를 출력에 표시하며, 페이지 이슈 리포트를 남깁니다. 모델·파일 접근·취소·출력 트랜잭션 실패는 안전하게 정지됩니다.</span></p>
           </details>
           <details>
-            <summary>Can a long conversion resume?</summary>
-            <p>PDFs use ten-page processing chunks. Clean completed chunks are checkpointed during an interrupted conversion and can be reused when the source and conversion settings still match. Chunks with warnings or incomplete output are processed again.</p>
+            <summary><span class="en">Can a long conversion resume?</span><span class="ko">긴 변환을 이어서 할 수 있나요?</span></summary>
+            <p><span class="en">PDFs use ten-page processing chunks. Clean completed chunks are checkpointed during an interrupted conversion and can be reused when the source and conversion settings still match. Chunks with warnings or incomplete output are processed again.</span><span class="ko">PDF는 10페이지 처리 청크를 사용합니다. 중단된 변환에서 깨끗하게 완료된 청크는 체크포인트로 남고, 원본과 설정이 같으면 재사용할 수 있습니다. 경고가 있거나 불완전한 청크는 다시 처리됩니다.</span></p>
           </details>
           <details>
-            <summary>Why can the first conversion take longer?</summary>
-            <p>The selected local OCR model must load before page processing begins. The app shows model-loading and page progress, and later conversions with the same engine may start sooner while the model remains available. Timing varies by Mac, page count, page layout, and engine, so a fixed minutes-per-document estimate would be misleading.</p>
+            <summary><span class="en">Why can the first conversion take longer?</span><span class="ko">첫 변환이 오래 걸리는 이유는?</span></summary>
+            <p><span class="en">The selected local OCR model must load before page processing begins. The app shows model-loading and page progress, and later conversions with the same engine may start sooner while the model remains available. Timing varies by Mac, page count, page layout, and engine, so a fixed minutes-per-document estimate would be misleading.</span><span class="ko">페이지 처리 전에 선택한 로컬 OCR 모델을 먼저 불러와야 합니다. 앱은 모델 로딩과 페이지 진행률을 표시하고, 모델이 남아 있는 동안 같은 엔진의 이후 변환은 더 빨리 시작될 수 있습니다. 소요 시간은 Mac·페이지 수·레이아웃·엔진에 따라 달라져 문서당 몇 분 같은 고정 추정은 오히려 오해를 줍니다.</span></p>
           </details>
           <details>
-            <summary>Does Markdown Ready support an 8 GB Mac?</summary>
-            <p>Not as a supported release configuration. Use an Apple Silicon Mac with 16 GB unified memory or more. The bundled vision-language models can put significant pressure on an 8 GB system, and that configuration has not completed the release validation gate.</p>
+            <summary><span class="en">Does Markdown Ready support an 8 GB Mac?</span><span class="ko">8GB Mac도 지원하나요?</span></summary>
+            <p><span class="en">Not as a supported release configuration. Use an Apple Silicon Mac with 16 GB unified memory or more. The bundled vision-language models can put significant pressure on an 8 GB system, and that configuration has not completed the release validation gate.</span><span class="ko">정식 지원 구성이 아닙니다. 통합 메모리 16GB 이상의 Apple Silicon Mac을 사용해 주세요. 내장 비전-언어 모델은 8GB 시스템에 상당한 부하를 줄 수 있고, 해당 구성은 출시 검증을 통과하지 않았습니다.</span></p>
           </details>
           <details>
-            <summary>Is Markdown Ready more accurate than a cloud AI?</summary>
-            <p>They serve different purposes, and no general accuracy advantage is claimed. Cloud AI can be excellent at understanding and explanation. Markdown Ready focuses on source-grounded, inspectable document conversion. OCR remains best-effort, especially for dense tables, formulas, handwriting, and poor scans.</p>
+            <summary><span class="en">Is Markdown Ready more accurate than a cloud AI?</span><span class="ko">Markdown Ready가 클라우드 AI보다 정확한가요?</span></summary>
+            <p><span class="en">They serve different purposes, and no general accuracy advantage is claimed. Cloud AI can be excellent at understanding and explanation. Markdown Ready focuses on source-grounded, inspectable document conversion. OCR remains best-effort, especially for dense tables, formulas, handwriting, and poor scans.</span><span class="ko">둘은 용도가 다르고, 일반적인 정확도 우위를 주장하지 않습니다. 클라우드 AI는 이해와 설명에 뛰어날 수 있습니다. Markdown Ready는 원본에 근거한, 검사 가능한 문서 변환에 집중합니다. OCR은 특히 빽빽한 표, 수식, 필기, 품질 낮은 스캔에서 최선을 다하는 수준입니다.</span></p>
           </details>
           <details>
-            <summary>Does Markdown Ready upload documents or require an account?</summary>
-            <p>No. The app uses bundled local OCR models, does not require an account, and does not upload document contents to a cloud OCR API.</p>
+            <summary><span class="en">Does Markdown Ready upload documents or require an account?</span><span class="ko">문서를 업로드하거나 계정이 필요한가요?</span></summary>
+            <p><span class="en">No. The app uses bundled local OCR models, does not require an account, and does not upload document contents to a cloud OCR API.</span><span class="ko">아니요. 내장 로컬 OCR 모델을 쓰고, 계정이 필요 없으며, 문서 내용을 클라우드 OCR API로 업로드하지 않습니다.</span></p>
           </details>
           <details>
-            <summary>Does Markdown Ready bypass copyright restrictions?</summary>
-            <p>No. Markdown Ready is a local file-conversion tool, not a rights-clearing service. Process only documents you are authorized to use and follow applicable copyright and other laws.</p>
+            <summary><span class="en">Does Markdown Ready bypass copyright restrictions?</span><span class="ko">저작권 제한을 우회하나요?</span></summary>
+            <p><span class="en">No. Markdown Ready is a local file-conversion tool, not a rights-clearing service. Process only documents you are authorized to use and follow applicable copyright and other laws.</span><span class="ko">아니요. Markdown Ready는 로컬 파일 변환 도구일 뿐 권리를 해결해 주는 서비스가 아닙니다. 사용 권한이 있는 문서만 처리하고 관련 저작권 및 기타 법률을 준수해 주세요.</span></p>
           </details>
           <details>
-            <summary>What is the main tradeoff?</summary>
-            <p>Local OCR adds a preprocessing step, takes time, and can use sustained Mac resources. In return, you keep an inspectable output file that is independent of any one chat or cloud service.</p>
+            <summary><span class="en">What is the main tradeoff?</span><span class="ko">가장 큰 트레이드오프는?</span></summary>
+            <p><span class="en">Local OCR adds a preprocessing step, takes time, and can use sustained Mac resources. In return, you keep an inspectable output file that is independent of any one chat or cloud service.</span><span class="ko">로컬 OCR은 전처리 단계가 생기고, 시간이 걸리며, Mac 자원을 지속적으로 쓸 수 있습니다. 그 대가로 어떤 챗·클라우드 서비스에도 의존하지 않는, 검사 가능한 출력 파일을 갖게 됩니다.</span></p>
           </details>
         </div>
 
-        <h2>Contact</h2>
+        <h2><span class="en">Contact</span><span class="ko">문의</span></h2>
         <p>
-          For support, contact <a href="mailto:support@hydromo.dev">support@hydromo.dev</a>. Include your macOS version, Mac model, Markdown Ready version/build, input file type, page count, and a short description of the issue. Do not send sensitive documents unless you intentionally choose to share them.
+          <span class="en">For support, contact <a href="mailto:support@hydromo.dev">support@hydromo.dev</a>. Include your macOS version, Mac model, Markdown Ready version/build, input file type, page count, and a short description of the issue. Do not send sensitive documents unless you intentionally choose to share them.</span>
+          <span class="ko">지원이 필요하면 <a href="mailto:support@hydromo.dev">support@hydromo.dev</a>로 연락해 주세요. macOS 버전, Mac 모델, Markdown Ready 버전/빌드, 입력 파일 형식, 페이지 수, 문제 요약을 함께 보내주면 도움이 됩니다. 민감한 문서는 일부러 공유하기로 결정한 경우가 아니면 보내지 마세요.</span>
         </p>
       </main>
 

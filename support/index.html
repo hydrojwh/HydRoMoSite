@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Support information for HydRoMo products.">
-    <title>Support - HydRoMo</title>
+    <script>try{var l=localStorage.getItem("hydromo-lang");if(l!=="ko"&&l!=="en")l="en";document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l);}catch(e){}</script>
+    <meta name="description" content="Support information for HydRoMo products." data-ko="HydRoMo 제품의 지원 정보입니다.">
+    <title data-ko="지원 - HydRoMo">Support - HydRoMo</title>
     <link rel="icon" href="/assets/hydromo-logo.svg" type="image/svg+xml">
     <link rel="canonical" href="https://hydromo.dev/support/">
     <meta property="og:type" content="website">
@@ -19,6 +20,7 @@
     <link rel="alternate icon" type="image/png" href="/assets/favicon-64.png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../lang.js" defer></script>
   </head>
   <body>
     <div class="page">
@@ -27,50 +29,55 @@
           <img src="../assets/hydromo-logo.svg" alt="HydRoMo" width="160" height="110">
         </a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="../#products">Products</a>
-          <a href="../support/">Support</a>
-          <a href="../privacy/">Privacy</a>
+          <a href="../#products"><span class="en">Products</span><span class="ko">제품</span></a>
+          <a href="../support/"><span class="en">Support</span><span class="ko">지원</span></a>
+          <a href="../privacy/"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
+          <button id="lang-toggle" class="lang-toggle" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 3.1 2.7 14.9 0 18M12 3c-2.7 3.1-2.7 14.9 0 18"/></svg>
+            <span class="lang-toggle-label">한국어</span>
+          </button>
         </nav>
       </header>
 
       <main class="content">
-        <p class="eyebrow">Support</p>
-        <h1>HydRoMo Support</h1>
+        <p class="eyebrow"><span class="en">Support</span><span class="ko">지원</span></p>
+        <h1><span class="en">HydRoMo Support</span><span class="ko">HydRoMo 지원</span></h1>
         <p>
-          For HydRoMo product support, use the product-specific contact information below.
+          <span class="en">For HydRoMo product support, use the product-specific contact information below.</span>
+          <span class="ko">HydRoMo 제품 지원은 아래의 제품별 연락 정보를 이용해 주세요.</span>
         </p>
 
         <div class="support-list">
           <section>
             <h2>Markdown Ready</h2>
-            <p>For Markdown Ready PDF to Markdown conversion questions, use the Markdown Ready support page.</p>
+            <p><span class="en">For Markdown Ready PDF to Markdown conversion questions, use the Markdown Ready support page.</span><span class="ko">Markdown Ready PDF→Markdown 변환 관련 문의는 Markdown Ready 지원 페이지를 이용해 주세요.</span></p>
             <p><a href="https://hydromo.dev/markdown-ready/support/">https://hydromo.dev/markdown-ready/support/</a></p>
             <p><a href="mailto:support@hydromo.dev">support@hydromo.dev</a></p>
           </section>
 
           <section>
             <h2>RockSpin</h2>
-            <p>For RockSpin questions, bug reports, and App Store support, use the RockSpin support page.</p>
+            <p><span class="en">For RockSpin questions, bug reports, and App Store support, use the RockSpin support page.</span><span class="ko">RockSpin 관련 문의, 버그 제보, App Store 지원은 RockSpin 지원 페이지를 이용해 주세요.</span></p>
             <p><a href="https://rockspin.app/support">https://rockspin.app/support</a></p>
             <p><a href="mailto:rockspin@hydromo.dev">rockspin@hydromo.dev</a></p>
           </section>
 
           <section>
             <h2>CleanClip</h2>
-            <p>For CleanClip questions and macOS support, use the CleanClip support page.</p>
+            <p><span class="en">For CleanClip questions and macOS support, use the CleanClip support page.</span><span class="ko">CleanClip 관련 문의와 macOS 지원은 CleanClip 지원 페이지를 이용해 주세요.</span></p>
             <p><a href="https://cleanclip.hydromo.dev/support/">https://cleanclip.hydromo.dev/support/</a></p>
             <p><a href="mailto:cleanclip@hydromo.dev">cleanclip@hydromo.dev</a></p>
           </section>
 
           <section>
             <h2>Battery Health</h2>
-            <p>For Battery Health questions about the menu-bar dashboard, battery readings, and Launch at Login, use the Battery Health support page.</p>
+            <p><span class="en">For Battery Health questions about the menu-bar dashboard, battery readings, and Launch at Login, use the Battery Health support page.</span><span class="ko">메뉴 막대 대시보드, 배터리 수치, 로그인 시 시작 등 Battery Health 관련 문의는 Battery Health 지원 페이지를 이용해 주세요.</span></p>
             <p><a href="https://hydromo.dev/battery-health/support/">https://hydromo.dev/battery-health/support/</a></p>
             <p><a href="mailto:support@hydromo.dev">support@hydromo.dev</a></p>
           </section>
         </div>
 
-        <h2>General Contact</h2>
+        <h2><span class="en">General Contact</span><span class="ko">공통 연락처</span></h2>
         <p><a href="mailto:contact@hydromo.dev">contact@hydromo.dev</a></p>
       </main>
 

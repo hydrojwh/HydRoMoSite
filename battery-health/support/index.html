@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="How to use Battery Health on your Mac: what each dashboard row means, how the health percentage is derived, Launch at Login, and troubleshooting.">
-    <title>Battery Health Support</title>
+    <script>try{var l=localStorage.getItem("hydromo-lang");if(l!=="ko"&&l!=="en")l="en";document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l);}catch(e){}</script>
+    <meta name="description" content="How to use Battery Health on your Mac: what each dashboard row means, how the health percentage is derived, Launch at Login, and troubleshooting." data-ko="Mac에서 Battery Health 사용법: 대시보드 각 항목의 의미, 건강도 백분율 계산 방식, 로그인 시 시작, 문제 해결까지 안내합니다.">
+    <title data-ko="Battery Health 지원">Battery Health Support</title>
     <link rel="icon" href="/assets/battery-health-icon.svg" type="image/svg+xml">
     <link rel="canonical" href="https://hydromo.dev/battery-health/support/">
     <meta property="og:type" content="website">
@@ -19,6 +20,7 @@
     <link rel="alternate icon" type="image/png" href="/assets/favicon-64.png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="stylesheet" href="../../styles.css">
+    <script src="../../lang.js" defer></script>
   </head>
   <body>
     <div class="page">
@@ -28,98 +30,107 @@
         </a>
         <nav class="nav-links" aria-label="Main navigation">
           <a href="../">Battery Health</a>
-          <a href="./">Support</a>
-          <a href="../privacy/">Privacy</a>
+          <a href="./"><span class="en">Support</span><span class="ko">지원</span></a>
+          <a href="../privacy/"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
+          <button id="lang-toggle" class="lang-toggle" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 3.1 2.7 14.9 0 18M12 3c-2.7 3.1-2.7 14.9 0 18"/></svg>
+            <span class="lang-toggle-label">한국어</span>
+          </button>
         </nav>
       </header>
 
       <main class="content">
-        <p class="eyebrow">Support</p>
-        <h1>Battery Health Support</h1>
+        <p class="eyebrow"><span class="en">Support</span><span class="ko">지원</span></p>
+        <h1><span class="en">Battery Health Support</span><span class="ko">Battery Health 지원</span></h1>
         <p>
-          Battery Health is a free macOS menu-bar utility that shows your Mac's charge, battery health, cycle count, and power adapter wattage. It reads these values locally and never uploads them.
+          <span class="en">Battery Health is a free macOS menu-bar utility that shows your Mac's charge, battery health, cycle count, and power adapter wattage. It reads these values locally and never uploads them.</span>
+          <span class="ko">Battery Health은 Mac의 충전량, 배터리 건강도, 사이클 수, 전원 어댑터 와트를 보여주는 무료 macOS 메뉴 막대 유틸리티입니다. 값은 로컬에서만 읽고 절대 업로드하지 않습니다.</span>
         </p>
 
-        <h2>Requirements</h2>
+        <h2><span class="en">Requirements</span><span class="ko">요구 사항</span></h2>
         <ul>
-          <li>A Mac with a built-in battery (MacBook Air or MacBook Pro).</li>
-          <li>macOS 14 Sonoma or later.</li>
+          <li><span class="en">A Mac with a built-in battery (MacBook Air or MacBook Pro).</span><span class="ko">내장 배터리가 있는 Mac (MacBook Air 또는 MacBook Pro).</span></li>
+          <li><span class="en">macOS 14 Sonoma or later.</span><span class="ko">macOS 14 Sonoma 이상.</span></li>
         </ul>
 
-        <h2>Quick Start</h2>
+        <h2><span class="en">Quick Start</span><span class="ko">빠른 시작</span></h2>
         <ol>
-          <li>Open Battery Health from Launchpad or the Applications folder. A pulse-line battery icon appears in the menu bar.</li>
-          <li>Click the icon to open the dashboard.</li>
-          <li>Click Refresh (the circular arrow) to re-read the values now; they also refresh automatically once an hour.</li>
-          <li>Use the info icon at the bottom left for About, and the power icon at the bottom right to quit.</li>
+          <li><span class="en">Open Battery Health from Launchpad or the Applications folder. A pulse-line battery icon appears in the menu bar.</span><span class="ko">런치패드 또는 응용 프로그램 폴더에서 Battery Health을 엽니다. 메뉴 막대에 펄스 라인 배터리 아이콘이 나타납니다.</span></li>
+          <li><span class="en">Click the icon to open the dashboard.</span><span class="ko">아이콘을 클릭하면 대시보드가 열립니다.</span></li>
+          <li><span class="en">Click Refresh (the circular arrow) to re-read the values now; they also refresh automatically once an hour.</span><span class="ko">새로 고침(원형 화살표)을 누르면 즉시 다시 읽습니다. 값은 1시간마다 자동 갱신되기도 합니다.</span></li>
+          <li><span class="en">Use the info icon at the bottom left for About, and the power icon at the bottom right to quit.</span><span class="ko">왼쪽 아래 정보 아이콘은 정보(About), 오른쪽 아래 전원 아이콘은 종료입니다.</span></li>
         </ol>
 
-        <h2>What Each Row Means</h2>
+        <h2><span class="en">What Each Row Means</span><span class="ko">각 항목의 의미</span></h2>
         <div class="support-list">
           <section>
-            <h3>Charge</h3>
-            <p>The current charge level. The link icon beside it opens the Battery pane in System Settings, where macOS charging options live.</p>
+            <h3><span class="en">Charge</span><span class="ko">충전량</span></h3>
+            <p><span class="en">The current charge level. The link icon beside it opens the Battery pane in System Settings, where macOS charging options live.</span><span class="ko">현재 충전량입니다. 옆의 링크 아이콘은 macOS 충전 옵션이 있는 시스템 설정의 배터리 패널을 엽니다.</span></p>
           </section>
           <section>
-            <h3>Battery health</h3>
-            <p>Maximum capacity as a percentage of the battery's design capacity. Green means above 80%, orange exactly 80%, red below 80%, gray when unavailable. The info icon beside the label shows this legend and the source of the figure: "Calculated from full/design capacity" when both values are available, or "Reported by macOS" when only a reported maximum capacity exists.</p>
+            <h3><span class="en">Battery health</span><span class="ko">배터리 건강도</span></h3>
+            <p><span class="en">Maximum capacity as a percentage of the battery's design capacity. Green means above 80%, orange exactly 80%, red below 80%, gray when unavailable. The info icon beside the label shows this legend and the source of the figure: "Calculated from full/design capacity" when both values are available, or "Reported by macOS" when only a reported maximum capacity exists.</span><span class="ko">설계 용량 대비 최대 용량의 백분율입니다. 초록은 80% 초과, 주황은 정확히 80%, 빨강은 80% 미만, 회색은 사용 불가를 뜻합니다. 레이블 옆 정보 아이콘에는 범례와 출처가 표시됩니다. 두 값이 모두 있으면 '완충/설계 용량으로 계산', 보고된 최대 용량만 있으면 'macOS 보고값'이라고 표시됩니다.</span></p>
           </section>
           <section>
-            <h3>Cycle count</h3>
-            <p>The number of charge cycles the battery has completed, as reported by macOS.</p>
+            <h3><span class="en">Cycle count</span><span class="ko">사이클 수</span></h3>
+            <p><span class="en">The number of charge cycles the battery has completed, as reported by macOS.</span><span class="ko">macOS가 보고하는, 배터리가 완료한 충전 사이클 수입니다.</span></p>
           </section>
           <section>
-            <h3>Power adapter</h3>
-            <p>The rated wattage of the connected adapter, for example "67 W". This is the adapter's rating, not the power being delivered right now. "Not connected" means the Mac is on battery. "Connected" means the Mac is on AC power through an adapter, dock, or hub that does not report a wattage.</p>
+            <h3><span class="en">Power adapter</span><span class="ko">전원 어댑터</span></h3>
+            <p><span class="en">The rated wattage of the connected adapter, for example "67 W". This is the adapter's rating, not the power being delivered right now. "Not connected" means the Mac is on battery. "Connected" means the Mac is on AC power through an adapter, dock, or hub that does not report a wattage.</span><span class="ko">연결된 어댑터의 정격 와트(예: "67 W")입니다. 현재 공급 중인 전력이 아니라 정격 값입니다. '연결 안 됨'은 배터리로 동작 중, '연결됨'은 와트를 보고하지 않는 어댑터·독·허브로 어댑터 전원을 쓰고 있다는 뜻입니다.</span></p>
           </section>
           <section>
-            <h3>Condition</h3>
-            <p>Appears only when macOS reports a battery condition such as "Normal" or "Service Recommended". If macOS provides nothing, the row is omitted rather than guessed.</p>
+            <h3><span class="en">Condition</span><span class="ko">상태</span></h3>
+            <p><span class="en">Appears only when macOS reports a battery condition such as "Normal" or "Service Recommended". If macOS provides nothing, the row is omitted rather than guessed.</span><span class="ko">macOS가 '정상'이나 '서비스 권장' 같은 배터리 상태를 보고할 때만 나타납니다. 정보가 없으면 추측하지 않고 항목을 생략합니다.</span></p>
           </section>
           <section>
-            <h3>Launch at Login</h3>
-            <p>Starts Battery Health automatically when you log in. The switch registers the app with the macOS login-item service; you can also review it under System Settings › General › Login Items &amp; Extensions.</p>
+            <h3><span class="en">Launch at Login</span><span class="ko">로그인 시 시작</span></h3>
+            <p><span class="en">Starts Battery Health automatically when you log in. The switch registers the app with the macOS login-item service; you can also review it under System Settings › General › Login Items &amp; Extensions.</span><span class="ko">로그인할 때 Battery Health을 자동으로 시작합니다. 스위치는 macOS 로그인 항목 서비스에 앱을 등록하며, 시스템 설정 › 일반 › 로그인 항목 및 확장 기능에서도 확인할 수 있습니다.</span></p>
           </section>
         </div>
 
-        <h2>Troubleshooting</h2>
+        <h2><span class="en">Troubleshooting</span><span class="ko">문제 해결</span></h2>
         <div class="support-list">
           <section>
-            <h3>I don't see the icon in the menu bar</h3>
-            <p>Confirm the app is running (it appears in the Dock while open). If the menu bar is crowded, macOS may hide items; make room by removing or rearranging other status items, or check the notch area on MacBook Pro models with a display cutout.</p>
+            <h3><span class="en">I don't see the icon in the menu bar</span><span class="ko">메뉴 막대에 아이콘이 안 보여요</span></h3>
+            <p><span class="en">Confirm the app is running (it appears in the Dock while open). If the menu bar is crowded, macOS may hide items; make room by removing or rearranging other status items, or check the notch area on MacBook Pro models with a display cutout.</span><span class="ko">앱이 실행 중인지 확인해 보세요 (실행 중에는 Dock에 나타납니다). 메뉴 막대가 꽉 차 있으면 macOS가 항목을 숨길 수 있습니다. 다른 상태 항목을 정리하거나, 디스플레이 홈이 있는 MacBook Pro는 홈 영역도 확인해 주세요.</span></p>
           </section>
           <section>
-            <h3>A value shows "Unavailable"</h3>
-            <p>macOS did not provide that value for your Mac. Battery Health never estimates a missing value. Try Refresh; if it stays unavailable, the information is not exposed by the system on this model.</p>
+            <h3><span class="en">A value shows "Unavailable"</span><span class="ko">값이 '사용할 수 없음'으로 표시돼요</span></h3>
+            <p><span class="en">macOS did not provide that value for your Mac. Battery Health never estimates a missing value. Try Refresh; if it stays unavailable, the information is not exposed by the system on this model.</span><span class="ko">macOS가 이 Mac에서 해당 값을 제공하지 않은 것입니다. Battery Health은 없는 값을 추정하지 않습니다. 새로 고침을 눌러 보고, 계속 사용할 수 없음이면 이 모델에서 시스템이 해당 정보를 노출하지 않는 것입니다.</span></p>
           </section>
           <section>
-            <h3>"Battery information is temporarily unavailable."</h3>
-            <p>The app could not read the battery service. On a desktop Mac this is expected. On a MacBook, click Refresh; if it persists after a restart, please report it.</p>
+            <h3><span class="en">"Battery information is temporarily unavailable."</span><span class="ko">"배터리 정보를 일시적으로 사용할 수 없습니다."</span></h3>
+            <p><span class="en">The app could not read the battery service. On a desktop Mac this is expected. On a MacBook, click Refresh; if it persists after a restart, please report it.</span><span class="ko">앱이 배터리 서비스를 읽지 못한 것입니다. 데스크톱 Mac에서는 정상입니다. MacBook이라면 새로 고침을 눌러 보고, 재시작 후에도 계속되면 제보해 주세요.</span></p>
           </section>
           <section>
-            <h3>Launch at Login does not start the app</h3>
-            <p>Make sure Battery Health is installed in the Applications folder and that it is allowed under System Settings › General › Login Items &amp; Extensions. Turn the switch off and on again to re-register.</p>
+            <h3><span class="en">Launch at Login does not start the app</span><span class="ko">로그인 시 시작이 동작하지 않아요</span></h3>
+            <p><span class="en">Make sure Battery Health is installed in the Applications folder and that it is allowed under System Settings › General › Login Items &amp; Extensions. Turn the switch off and on again to re-register.</span><span class="ko">Battery Health이 응용 프로그램 폴더에 설치돼 있고, 시스템 설정 › 일반 › 로그인 항목 및 확장 기능에서 허용되어 있는지 확인하세요. 스위치를 끄었다 다시 켜면 다시 등록됩니다.</span></p>
           </section>
           <section>
-            <h3>The health percentage differs from another app</h3>
-            <p>Apps divide different capacity values. Battery Health shows its method under the info icon so you can compare like with like.</p>
+            <h3><span class="en">The health percentage differs from another app</span><span class="ko">다른 앱과 건강도 백분율이 달라요</span></h3>
+            <p><span class="en">Apps divide different capacity values. Battery Health shows its method under the info icon so you can compare like with like.</span><span class="ko">앱마다 나누는 용량 값이 다릅니다. Battery Health은 정보 아이콘 아래 계산 방식을 표시하므로 같은 기준끼리 비교할 수 있습니다.</span></p>
           </section>
         </div>
 
-        <h2>Privacy</h2>
+        <h2><span class="en">Privacy</span><span class="ko">개인정보</span></h2>
         <p>
-          Battery Health reads a fixed list of battery values locally and stores nothing. It has no account, analytics, or network access. See the
-          <a href="../privacy/">Battery Health Privacy Policy</a>.
+          <span class="en">Battery Health reads a fixed list of battery values locally and stores nothing. It has no account, analytics, or network access. See the</span>
+          <span class="ko">Battery Health은 고정된 배터리 값 목록을 로컬에서만 읽고 아무것도 저장하지 않습니다. 계정, 분석, 네트워크 접근이 없습니다.</span>
+          <a href="../privacy/"><span class="en">Battery Health Privacy Policy</span><span class="ko">Battery Health 개인정보처리방침</span></a><span class="en">.</span><span class="ko">을 참고하세요.</span>
         </p>
 
-        <h2>Report an Issue</h2>
+        <h2><span class="en">Report an Issue</span><span class="ko">문제 보고</span></h2>
         <p>
-          In the app, open About (info icon, bottom left) and choose "Report an Issue…". It opens a draft in your mail client with the app and macOS versions filled in; add what you saw and what you expected. You can also write to <a href="mailto:support@hydromo.dev">support@hydromo.dev</a> directly. Helpful details: Mac model, macOS version, the app version shown in About, and a screenshot of the dashboard.
+          <span class="en">In the app, open About (info icon, bottom left) and choose "Report an Issue…". It opens a draft in your mail client with the app and macOS versions filled in; add what you saw and what you expected. You can also write to <a href="mailto:support@hydromo.dev">support@hydromo.dev</a> directly. Helpful details: Mac model, macOS version, the app version shown in About, and a screenshot of the dashboard.</span>
+          <span class="ko">앱의 정보(왼쪽 아래 정보 아이콘)에서 '문제 보고…'를 선택하면 앱·macOS 버전이 채워진 메일 초안이 열립니다. 보신 내용과 기대한 동작을 적어 보내주세요. <a href="mailto:support@hydromo.dev">support@hydromo.dev</a>로 직접 보내셔도 됩니다. Mac 모델, macOS 버전, 정보에 표시된 앱 버전, 대시보드 스크린샷이 큰 도움이 됩니다.</span>
         </p>
 
-        <h2>Contact</h2>
+        <h2><span class="en">Contact</span><span class="ko">문의</span></h2>
         <p>
-          For support, contact <a href="mailto:support@hydromo.dev">support@hydromo.dev</a>.
+          <span class="en">For support, contact</span>
+          <span class="ko">지원 문의는</span>
+          <a href="mailto:support@hydromo.dev">support@hydromo.dev</a><span class="en">.</span><span class="ko">로 보내주세요.</span>
         </p>
       </main>
 

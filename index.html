@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="HydRoMo develops scientific visualization, education, and productivity software including Markdown Ready, RockSpin, CleanClip, and PromptReady.">
-    <title>HydRoMo — Scientific Software and Productivity Apps</title>
+    <script>try{var l=localStorage.getItem("hydromo-lang");if(l!=="ko"&&l!=="en")l="en";document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l);}catch(e){}</script>
+    <meta name="description" content="HydRoMo develops scientific visualization, education, and productivity software including Markdown Ready, RockSpin, CleanClip, and PromptReady." data-ko="HydRoMo는 Markdown Ready, RockSpin, CleanClip, PromptReady를 포함한 과학 시각화·교육·생산성 소프트웨어를 만듭니다.">
+    <title data-ko="HydRoMo — 과학 소프트웨어와 생산성 앱">HydRoMo — Scientific Software and Productivity Apps</title>
     <link rel="icon" href="/assets/hydromo-logo.svg" type="image/svg+xml">
     <link rel="canonical" href="https://hydromo.dev/">
     <meta property="og:type" content="website">
@@ -19,6 +20,7 @@
     <link rel="alternate icon" type="image/png" href="/assets/favicon-64.png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="lang.js" defer></script>
   </head>
   <body>
     <div class="page">
@@ -27,42 +29,48 @@
           <img src="assets/hydromo-logo.svg" alt="HydRoMo" width="160" height="110">
         </a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="#products">Products</a>
-          <a href="support/">Support</a>
-          <a href="privacy/">Privacy</a>
+          <a href="#products"><span class="en">Products</span><span class="ko">제품</span></a>
+          <a href="support/"><span class="en">Support</span><span class="ko">지원</span></a>
+          <a href="privacy/"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
+          <button id="lang-toggle" class="lang-toggle" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 3.1 2.7 14.9 0 18M12 3c-2.7 3.1-2.7 14.9 0 18"/></svg>
+            <span class="lang-toggle-label">한국어</span>
+          </button>
         </nav>
       </header>
 
       <main>
         <section class="hero">
-          <p class="eyebrow">Scientific software and focused tools</p>
+          <p class="eyebrow"><span class="en">Scientific software and focused tools</span><span class="ko">과학 소프트웨어와 집중적인 도구</span></p>
           <h1>HydRoMo</h1>
           <p class="lead">
-            HydRoMo develops practical software for scientific visualization, digital education, AI document workflows, and focused productivity.
+            <span class="en">HydRoMo develops practical software for scientific visualization, digital education, AI document workflows, and focused productivity.</span>
+            <span class="ko">HydRoMo는 과학 시각화, 디지털 교육, AI 문서 워크플로, 집중적인 생산성을 위한 실용적인 소프트웨어를 만듭니다.</span>
           </p>
           <div class="actions">
-            <a class="button primary" href="#products">View Products</a>
-            <a class="button" href="mailto:contact@hydromo.dev">Contact HydRoMo</a>
+            <a class="button primary" href="#products"><span class="en">View Products</span><span class="ko">제품 보기</span></a>
+            <a class="button" href="mailto:contact@hydromo.dev"><span class="en">Contact HydRoMo</span><span class="ko">HydRoMo 문의하기</span></a>
           </div>
         </section>
 
         <section class="section" id="products" aria-labelledby="products-title">
           <div class="section-heading">
-            <p class="eyebrow">Products</p>
-            <h2 id="products-title">Software Built by HydRoMo</h2>
+            <p class="eyebrow"><span class="en">Products</span><span class="ko">제품</span></p>
+            <h2 id="products-title"><span class="en">Software Built by HydRoMo</span><span class="ko">HydRoMo가 만든 소프트웨어</span></h2>
           </div>
           <div class="product-grid">
             <article class="product-card">
               <div class="product-mark markdown-ready">MR</div>
               <h3>Markdown Ready</h3>
               <p>
-                A macOS menu bar app that converts PDFs and document images into Markdown on Apple Silicon, with local OCR and no cloud upload.
+                <span class="en">A macOS menu bar app that converts PDFs and document images into Markdown on Apple Silicon, with local OCR and no cloud upload.</span>
+                <span class="ko">Apple Silicon에서 로컬 OCR로 PDF와 문서 이미지를 Markdown으로 변환하는 macOS 메뉴 막대 앱입니다. 클라우드 업로드는 없습니다.</span>
               </p>
               <div class="card-links">
                 <a href="https://apps.apple.com/us/app/markdown-ready/id6780211476?mt=12">Mac App Store</a>
-                <a href="markdown-ready/">Product Site</a>
-                <a href="markdown-ready/support/">Support</a>
-                <a href="markdown-ready/privacy/">Privacy</a>
+                <a href="markdown-ready/"><span class="en">Product Site</span><span class="ko">제품 페이지</span></a>
+                <a href="markdown-ready/support/"><span class="en">Support</span><span class="ko">지원</span></a>
+                <a href="markdown-ready/privacy/"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
               </div>
             </article>
 
@@ -70,12 +78,13 @@
               <div class="product-mark rockspin">RS</div>
               <h3>RockSpin</h3>
               <p>
-                An iOS geology education app for exploring petrographic thin sections, mineral markers, and crystal structures.
+                <span class="en">An iOS geology education app for exploring petrographic thin sections, mineral markers, and crystal structures.</span>
+                <span class="ko">암석편광박편, 광물 마커, 결정 구조를 탐색하는 iOS 지질학 교육 앱입니다.</span>
               </p>
               <div class="card-links">
                 <a href="https://apps.apple.com/us/app/rockspin/id6747876962">App Store</a>
-                <a href="https://rockspin.app/support">Support</a>
-                <a href="https://rockspin.app/privacy">Privacy</a>
+                <a href="https://rockspin.app/support"><span class="en">Support</span><span class="ko">지원</span></a>
+                <a href="https://rockspin.app/privacy"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
               </div>
             </article>
 
@@ -83,23 +92,26 @@
               <div class="product-mark cleanclip">CC</div>
               <h3>CleanClip</h3>
               <p>
-                A macOS menu bar utility that converts rich clipboard content to plain text and keeps a private memory-only history.
+                <span class="en">A macOS menu bar utility that converts rich clipboard content to plain text and keeps a private memory-only history.</span>
+                <span class="ko">서식이 들어간 클립보드 내용을 일반 텍스트로 변환하고, 메모리에만 저장되는 개인 히스토리를 유지하는 macOS 메뉴 막대 유틸리티입니다.</span>
               </p>
               <div class="card-links">
                 <a href="https://apps.apple.com/us/app/cleanclip/id6761654903?mt=12">Mac App Store</a>
-                <a href="https://cleanclip.hydromo.dev/">Product Site</a>
-                <a href="https://cleanclip.hydromo.dev/support/">Support</a>
-                <a href="https://cleanclip.hydromo.dev/privacy/">Privacy</a>
+                <a href="https://cleanclip.hydromo.dev/"><span class="en">Product Site</span><span class="ko">제품 페이지</span></a>
+                <a href="https://cleanclip.hydromo.dev/support/"><span class="en">Support</span><span class="ko">지원</span></a>
+                <a href="https://cleanclip.hydromo.dev/privacy/"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
               </div>
             </article>
+
             <article class="product-card">
               <div class="product-mark promptready">PR</div>
               <h3>PromptReady</h3>
               <p>
-                A web service and MCP server that converts PDFs to clean Markdown for AI, RAG, and LLM workflows. Cloud OCR with three engines, same credits for web and agent use.
+                <span class="en">A web service and MCP server that converts PDFs to clean Markdown for AI, RAG, and LLM workflows. Cloud OCR with three engines, same credits for web and agent use.</span>
+                <span class="ko">PDF를 AI·RAG·LLM 워크플로용 Markdown으로 변환하는 웹 서비스와 MCP 서버입니다. 세 가지 엔진의 클라우드 OCR을 제공하며 웹과 에이전트가 같은 크레딧을 공유합니다.</span>
               </p>
               <div class="card-links">
-                <a href="https://promptready.space/">Product Site</a>
+                <a href="https://promptready.space/"><span class="en">Product Site</span><span class="ko">제품 페이지</span></a>
                 <a href="https://github.com/hydrojwh/promptready-mcp">MCP Server</a>
               </div>
             </article>
@@ -108,11 +120,12 @@
 
         <section class="section split" aria-labelledby="company-title">
           <div>
-            <p class="eyebrow">Company</p>
-            <h2 id="company-title">Official HydRoMo Website</h2>
+            <p class="eyebrow"><span class="en">Company</span><span class="ko">회사</span></p>
+            <h2 id="company-title"><span class="en">Official HydRoMo Website</span><span class="ko">HydRoMo 공식 웹사이트</span></h2>
           </div>
           <p>
-            This website is the public home for HydRoMo and its software products. Product-specific support and privacy pages are linked from each product section.
+            <span class="en">This website is the public home for HydRoMo and its software products. Product-specific support and privacy pages are linked from each product section.</span>
+            <span class="ko">이 웹사이트는 HydRoMo와 그 소프트웨어 제품의 공식 홈입니다. 제품별 지원·개인정보처리방침 페이지는 각 제품 섹션에서 연결됩니다.</span>
           </p>
         </section>
       </main>

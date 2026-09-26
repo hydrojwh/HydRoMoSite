@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A private, on-device document compiler for reusable Markdown and optional JSON on Apple Silicon Macs. Two local OCR engines, no cloud OCR API.">
-    <title>Markdown Ready - PDF to Markdown on your Mac</title>
+    <script>try{var l=localStorage.getItem("hydromo-lang");if(l!=="ko"&&l!=="en")l="en";document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l);}catch(e){}</script>
+    <meta name="description" content="A private, on-device document compiler for reusable Markdown and optional JSON on Apple Silicon Macs. Two local OCR engines, no cloud OCR API." data-ko="Apple Silicon Mac에서 재사용 가능한 Markdown과 선택적 JSON을 만드는 온디바이스 문서 컴파일러입니다. 로컬 OCR 엔진 두 종류, 클라우드 OCR API 없음.">
+    <title data-ko="Markdown Ready - Mac에서 PDF를 Markdown으로">Markdown Ready - PDF to Markdown on your Mac</title>
     <link rel="icon" href="/assets/markdown-ready-icon.svg" type="image/svg+xml">
     <link rel="canonical" href="https://hydromo.dev/markdown-ready/">
     <meta property="og:type" content="website">
@@ -19,6 +20,7 @@
     <link rel="alternate icon" type="image/png" href="/assets/favicon-64.png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../lang.js" defer></script>
   </head>
   <body>
     <div class="page">
@@ -27,27 +29,33 @@
           <img src="../assets/hydromo-logo.svg" alt="HydRoMo" width="160" height="110">
         </a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="../#products">Products</a>
-          <a href="support/">Support</a>
-          <a href="privacy/">Privacy</a>
+          <a href="../#products"><span class="en">Products</span><span class="ko">제품</span></a>
+          <a href="support/"><span class="en">Support</span><span class="ko">지원</span></a>
+          <a href="privacy/"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
+          <button id="lang-toggle" class="lang-toggle" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 3.1 2.7 14.9 0 18M12 3c-2.7 3.1-2.7 14.9 0 18"/></svg>
+            <span class="lang-toggle-label">한국어</span>
+          </button>
         </nav>
       </header>
 
       <main>
         <section class="hero product-hero">
           <div>
-            <p class="eyebrow">PDF to Markdown on your Mac</p>
+            <p class="eyebrow"><span class="en">PDF to Markdown on your Mac</span><span class="ko">Mac에서 PDF를 Markdown으로</span></p>
             <h1>Markdown Ready</h1>
             <p class="lead">
-              Compile PDFs, scanned pages, and document images into durable Markdown you can review, edit, search, archive, and reuse across AI and local workflows.
+              <span class="en">Compile PDFs, scanned pages, and document images into durable Markdown you can review, edit, search, archive, and reuse across AI and local workflows.</span>
+              <span class="ko">PDF, 스캔 문서, 문서 이미지를 검토·편집·검색·보관하고 AI와 로컬 워크플로에서 재사용할 수 있는 안정적인 Markdown으로 컴파일합니다.</span>
             </p>
             <p class="launch-strip">
-              Launch celebration: $2.99 through October 31 (regularly $9.99). One-time purchase. No subscription.
+              <span class="en">Launch celebration: $2.99 through October 31 (regularly $9.99). One-time purchase. No subscription.</span>
+              <span class="ko">출시 기념: 10월 31일까지 $2.99 (정가 $9.99). 일회성 구매, 구독 없음.</span>
             </p>
             <div class="actions">
-              <a class="button primary" href="https://apps.apple.com/us/app/markdown-ready/id6780211476?mt=12">Buy on the Mac App Store</a>
-              <a class="button" href="support/">Read Support Guide</a>
-              <a class="button" href="privacy/">Privacy Policy</a>
+              <a class="button primary" href="https://apps.apple.com/us/app/markdown-ready/id6780211476?mt=12"><span class="en">Buy on the Mac App Store</span><span class="ko">Mac App Store에서 구매</span></a>
+              <a class="button" href="support/"><span class="en">Read Support Guide</span><span class="ko">지원 가이드 보기</span></a>
+              <a class="button" href="privacy/"><span class="en">Privacy Policy</span><span class="ko">개인정보처리방침</span></a>
             </div>
           </div>
           <img class="app-icon" src="../assets/markdown-ready-icon.svg" alt="Markdown Ready app icon" width="180" height="180">
@@ -55,121 +63,124 @@
 
         <section class="section split" aria-labelledby="copy-title">
           <div>
-            <p class="eyebrow">From PDF to usable text</p>
-            <h2 id="copy-title">Still copying pages out of PDFs by hand?</h2>
+            <p class="eyebrow"><span class="en">From PDF to usable text</span><span class="ko">PDF에서 쓸 수 있는 텍스트로</span></p>
+            <h2 id="copy-title"><span class="en">Still copying pages out of PDFs by hand?</span><span class="ko">아직도 PDF에서 페이지를 손으로 옮기고 계신가요?</span></h2>
           </div>
           <p>
-            Direct PDF chat is convenient for quick questions. Markdown Ready serves a different need: convert once, keep a reviewable file, and reuse the same output across chat services, local models, notes, wikis, RAG, and archives.
+            <span class="en">Direct PDF chat is convenient for quick questions. Markdown Ready serves a different need: convert once, keep a reviewable file, and reuse the same output across chat services, local models, notes, wikis, RAG, and archives.</span>
+            <span class="ko">PDF를 챗에 직접 올리는 방식은 간단한 질문에 편리합니다. Markdown Ready는 다른 필요를 채웁니다. 한 번 변환해 검토 가능한 파일을 남기고, 같은 결과물을 챗 서비스, 로컬 모델, 노트, 위키, RAG, 아카이브에서 재사용하는 것이죠.</span>
           </p>
         </section>
 
         <section class="section" aria-labelledby="compiler-title">
           <div class="section-heading">
-            <p class="eyebrow">Local Document Compiler</p>
-            <h2 id="compiler-title">The output remains yours</h2>
+            <p class="eyebrow"><span class="en">Local Document Compiler</span><span class="ko">로컬 문서 컴파일러</span></p>
+            <h2 id="compiler-title"><span class="en">The output remains yours</span><span class="ko">결과물은 당신의 것으로 남습니다</span></h2>
           </div>
           <div class="feature-grid">
             <section>
-              <h3>Convert once</h3>
-              <p>Prepare the source document before using it downstream instead of repeating the same extraction in each chat or service.</p>
+              <h3><span class="en">Convert once</span><span class="ko">한 번만 변환</span></h3>
+              <p><span class="en">Prepare the source document before using it downstream instead of repeating the same extraction in each chat or service.</span><span class="ko">매 챗·서비스마다 같은 추출을 반복하지 말고, downstream에서 쓰기 전에 원본 문서를 한 번 준비해 두세요.</span></p>
             </section>
             <section>
-              <h3>Keep the artifact</h3>
-              <p>Save durable Markdown and optional JSON in a folder you choose, alongside the original document.</p>
+              <h3><span class="en">Keep the artifact</span><span class="ko">산출물 보관</span></h3>
+              <p><span class="en">Save durable Markdown and optional JSON in a folder you choose, alongside the original document.</span><span class="ko">내구성 있는 Markdown과 선택적 JSON을 원본 문서 옆, 직접 고른 폴더에 저장합니다.</span></p>
             </section>
             <section>
-              <h3>Reuse anywhere</h3>
-              <p>Move the same inspectable output between chat, local models, notes, wikis, RAG, and archives.</p>
+              <h3><span class="en">Reuse anywhere</span><span class="ko">어디서든 재사용</span></h3>
+              <p><span class="en">Move the same inspectable output between chat, local models, notes, wikis, RAG, and archives.</span><span class="ko">검사 가능한 같은 결과물을 챗, 로컬 모델, 노트, 위키, RAG, 아카이브 사이에서 자유롭게 옮겨 쓰세요.</span></p>
             </section>
           </div>
-          <p><a href="support/#questions-and-answers">Compare workflows and read the full Q&amp;A.</a></p>
+          <p><a href="support/#questions-and-answers"><span class="en">Compare workflows and read the full Q&amp;A.</span><span class="ko">워크플로 비교와 전체 Q&amp;A 보기.</span></a></p>
         </section>
 
         <section class="section" aria-labelledby="features-title">
           <div class="section-heading">
-            <p class="eyebrow">Current Features</p>
-            <h2 id="features-title">Document conversion without a cloud OCR API</h2>
+            <p class="eyebrow"><span class="en">Current Features</span><span class="ko">주요 기능</span></p>
+            <h2 id="features-title"><span class="en">Document conversion without a cloud OCR API</span><span class="ko">클라우드 OCR API 없이 문서 변환</span></h2>
           </div>
           <div class="feature-grid">
             <section>
-              <h3>PDF and image input</h3>
-              <p>Choose a PDF, JPG/JPEG, PNG, or input folder through macOS file and folder pickers.</p>
+              <h3><span class="en">PDF and image input</span><span class="ko">PDF·이미지 입력</span></h3>
+              <p><span class="en">Choose a PDF, JPG/JPEG, PNG, or input folder through macOS file and folder pickers.</span><span class="ko">macOS 파일·폴더 선택기를 통해 PDF, JPG/JPEG, PNG 또는 입력 폴더를 고를 수 있습니다.</span></p>
             </section>
             <section>
-              <h3>Markdown and JSON output</h3>
-              <p>Generate Markdown for review and optional JSON sidecar files for inspection, automation, and downstream workflows.</p>
+              <h3><span class="en">Markdown and JSON output</span><span class="ko">Markdown·JSON 출력</span></h3>
+              <p><span class="en">Generate Markdown for review and optional JSON sidecar files for inspection, automation, and downstream workflows.</span><span class="ko">검토용 Markdown과, 검사·자동화·후속 작업용 선택적 JSON 사이드카 파일을 생성합니다.</span></p>
             </section>
             <section>
-              <h3>Two local OCR engines</h3>
-              <p>Choose between GLM-OCR and PaddleOCR-VL for each conversion.</p>
+              <h3><span class="en">Two local OCR engines</span><span class="ko">로컬 OCR 엔진 두 종류</span></h3>
+              <p><span class="en">Choose between GLM-OCR and PaddleOCR-VL for each conversion.</span><span class="ko">변환할 때마다 GLM-OCR과 PaddleOCR-VL 중에서 고를 수 있습니다.</span></p>
             </section>
             <section>
-              <h3>Table options</h3>
-              <p>Turn on the Tables option when table-aware conversion matters.</p>
+              <h3><span class="en">Table options</span><span class="ko">표 옵션</span></h3>
+              <p><span class="en">Turn on the Tables option when table-aware conversion matters.</span><span class="ko">표 구조가 중요한 문서라면 Tables 옵션을 켜세요.</span></p>
             </section>
             <section>
-              <h3>One-time folder batches</h3>
-              <p>Process supported files directly inside a selected folder once, without traversing subfolders.</p>
+              <h3><span class="en">One-time folder batches</span><span class="ko">일회성 폴더 배치</span></h3>
+              <p><span class="en">Process supported files directly inside a selected folder once, without traversing subfolders.</span><span class="ko">선택한 폴더 바로 안에 있는 지원 파일을 하위 폴더 침범 없이 한 번에 처리합니다.</span></p>
             </section>
             <section>
-              <h3>Local OCR</h3>
-              <p>Documents are processed locally on Apple Silicon and written to the output folder you choose.</p>
+              <h3><span class="en">Local OCR</span><span class="ko">로컬 OCR</span></h3>
+              <p><span class="en">Documents are processed locally on Apple Silicon and written to the output folder you choose.</span><span class="ko">문서는 Apple Silicon에서 로컬로 처리되고, 직접 고른 출력 폴더에 기록됩니다.</span></p>
             </section>
             <section>
-              <h3>Long-document resilience</h3>
-              <p>PDFs use ten-page chunks, clean-chunk checkpoints, and page issue reports so one difficult page does not normally discard the rest.</p>
+              <h3><span class="en">Long-document resilience</span><span class="ko">긴 문서 안정성</span></h3>
+              <p><span class="en">PDFs use ten-page chunks, clean-chunk checkpoints, and page issue reports so one difficult page does not normally discard the rest.</span><span class="ko">PDF는 10페이지 청크, 완료 청크 체크포인트, 페이지 이슈 리포트를 사용해 한두 어려운 페이지가 나머지를 날려버리지 않습니다.</span></p>
             </section>
           </div>
         </section>
 
         <section class="section split" aria-labelledby="local-title">
           <div>
-            <p class="eyebrow">Local Processing</p>
-            <h2 id="local-title">Your documents stay on your Mac</h2>
+            <p class="eyebrow"><span class="en">Local Processing</span><span class="ko">로컬 처리</span></p>
+            <h2 id="local-title"><span class="en">Your documents stay on your Mac</span><span class="ko">문서는 당신의 Mac에 머무릅니다</span></h2>
           </div>
           <p>
-            Your documents are selected through macOS file and folder pickers and processed locally. Markdown Ready does not upload document contents to a cloud OCR API. The output is written to the folder you choose.
+            <span class="en">Your documents are selected through macOS file and folder pickers and processed locally. Markdown Ready does not upload document contents to a cloud OCR API. The output is written to the folder you choose.</span>
+            <span class="ko">문서는 macOS 파일·폴더 선택기로 선택되고 로컬에서 처리됩니다. Markdown Ready는 문서 내용을 클라우드 OCR API로 업로드하지 않습니다. 결과물은 직접 고른 폴더에 기록됩니다.</span>
           </p>
         </section>
 
         <section class="section split" aria-labelledby="batch-title">
           <div>
-            <p class="eyebrow">Folder Workflow</p>
-            <h2 id="batch-title">One-Time Folder Batches</h2>
+            <p class="eyebrow"><span class="en">Folder Workflow</span><span class="ko">폴더 워크플로</span></p>
+            <h2 id="batch-title"><span class="en">One-Time Folder Batches</span><span class="ko">일회성 폴더 배치</span></h2>
           </div>
           <p>
-            Choose a folder and press Start to process supported files directly inside it once. The batch is non-recursive: subfolders are not traversed, and Markdown Ready does not watch or poll the folder for later changes.
+            <span class="en">Choose a folder and press Start to process supported files directly inside it once. The batch is non-recursive: subfolders are not traversed, and Markdown Ready does not watch or poll the folder for later changes.</span>
+            <span class="ko">폴더를 고르고 Start를 누르면 그 폴더 바로 안의 지원 파일을 한 번 처리합니다. 배치는 비재귀 방식이라 하위 폴더는 들어가지 않고, 이후 변화를 지켜보거나 폴링하지도 않습니다.</span>
           </p>
         </section>
 
         <section class="section" aria-labelledby="workflow-title">
           <div class="section-heading">
-            <p class="eyebrow">How It Works</p>
-            <h2 id="workflow-title">From source file to reviewable output</h2>
+            <p class="eyebrow"><span class="en">How It Works</span><span class="ko">작동 방식</span></p>
+            <h2 id="workflow-title"><span class="en">From source file to reviewable output</span><span class="ko">원본 파일에서 검토 가능한 결과까지</span></h2>
           </div>
           <ol>
-            <li>Select a PDF, document image, or folder.</li>
-            <li>Choose where Markdown Ready should save converted files.</li>
-            <li>Pick Markdown and optional JSON output.</li>
-            <li>Turn Tables on when structure matters and choose how Existing output is handled.</li>
-            <li>Press Start. A folder input runs once over supported top-level files only.</li>
-            <li>Use Output to review the saved files before using them downstream.</li>
+            <li><span class="en">Select a PDF, document image, or folder.</span><span class="ko">PDF, 문서 이미지 또는 폴더를 선택합니다.</span></li>
+            <li><span class="en">Choose where Markdown Ready should save converted files.</span><span class="ko">변환된 파일을 저장할 위치를 정합니다.</span></li>
+            <li><span class="en">Pick Markdown and optional JSON output.</span><span class="ko">Markdown과 선택적 JSON 출력을 고릅니다.</span></li>
+            <li><span class="en">Turn Tables on when structure matters and choose how Existing output is handled.</span><span class="ko">구조가 중요하면 Tables를 켜고, 기존 출력 처리 방식(Existing)을 정합니다.</span></li>
+            <li><span class="en">Press Start. A folder input runs once over supported top-level files only.</span><span class="ko">Start를 누릅니다. 폴더 입력은 지원되는 최상위 파일에 대해 한 번만 실행됩니다.</span></li>
+            <li><span class="en">Use Output to review the saved files before using them downstream.</span><span class="ko">Output에서 저장된 파일을 확인한 뒤 활용하세요.</span></li>
           </ol>
         </section>
 
         <section class="section" aria-labelledby="notes-title">
           <div class="section-heading">
-            <p class="eyebrow">Important Notes</p>
-            <h2 id="notes-title">Local OCR is useful, but still needs review</h2>
+            <p class="eyebrow"><span class="en">Important Notes</span><span class="ko">알아두세요</span></p>
+            <h2 id="notes-title"><span class="en">Local OCR is useful, but still needs review</span><span class="ko">로컬 OCR은 유용하지만, 검토는 여전히 필요합니다</span></h2>
           </div>
           <div class="feature-grid">
             <section>
-              <h3>Performance and power</h3>
-              <p>Large PDFs and folder batches can use sustained CPU/GPU and unified memory on Apple Silicon. For long conversions, keep your Mac connected to power.</p>
+              <h3><span class="en">Performance and power</span><span class="ko">성능과 전원</span></h3>
+              <p><span class="en">Large PDFs and folder batches can use sustained CPU/GPU and unified memory on Apple Silicon. For long conversions, keep your Mac connected to power.</span><span class="ko">큰 PDF와 폴더 배치는 Apple Silicon의 CPU/GPU와 통합 메모리를 지속적으로 사용할 수 있습니다. 긴 변환에는 Mac을 전원에 연결해 두세요.</span></p>
             </section>
             <section>
-              <h3>Accuracy</h3>
-              <p>OCR is not perfect. Complex tables, formulas, handwriting, historical scans, screenshots, tiny text, and low-quality source images can produce mistakes.</p>
+              <h3><span class="en">Accuracy</span><span class="ko">정확도</span></h3>
+              <p><span class="en">OCR is not perfect. Complex tables, formulas, handwriting, historical scans, screenshots, tiny text, and low-quality source images can produce mistakes.</span><span class="ko">OCR은 완벽하지 않습니다. 복잡한 표, 수식, 필기, 오래된 스캔본, 스크린샷, 작은 글씨, 품질이 낮은 원본 이미지는 오류를 만들 수 있습니다.</span></p>
             </section>
           </div>
         </section>
@@ -177,28 +188,28 @@
         <section class="section" id="questions-and-answers" aria-labelledby="faq-title">
           <div class="section-heading">
             <p class="eyebrow">FAQ</p>
-            <h2 id="faq-title">Common questions</h2>
+            <h2 id="faq-title"><span class="en">Common questions</span><span class="ko">자주 묻는 질문</span></h2>
           </div>
           <div class="support-list">
             <section>
-              <h3>Does Markdown Ready upload my documents?</h3>
-              <p>No. Markdown Ready processes selected documents locally on your Mac and writes output to the folder you choose. No cloud OCR API is required for model loading or conversion.</p>
+              <h3><span class="en">Does Markdown Ready upload my documents?</span><span class="ko">Markdown Ready는 문서를 업로드하나요?</span></h3>
+              <p><span class="en">No. Markdown Ready processes selected documents locally on your Mac and writes output to the folder you choose. No cloud OCR API is required for model loading or conversion.</span><span class="ko">아니요. 선택한 문서는 Mac에서 로컬로 처리되고 결과는 직접 고른 폴더에 기록됩니다. 모델 로딩이나 변환에 클라우드 OCR API가 필요하지 않습니다.</span></p>
             </section>
             <section>
-              <h3>Is the output always perfect?</h3>
-              <p>No OCR system is perfect. Markdown Ready is designed to make documents easier to inspect and reuse, but important sections should be reviewed before you rely on the output.</p>
+              <h3><span class="en">Is the output always perfect?</span><span class="ko">출력은 항상 완벽한가요?</span></h3>
+              <p><span class="en">No OCR system is perfect. Markdown Ready is designed to make documents easier to inspect and reuse, but important sections should be reviewed before you rely on the output.</span><span class="ko">완벽한 OCR 시스템은 없습니다. Markdown Ready는 문서를 검사하고 재사용하기 쉽게 만들지만, 중요한 부분은 결과를 신뢰하기 전에 검토해야 합니다.</span></p>
             </section>
             <section>
-              <h3>How does folder input work?</h3>
-              <p>Choose a folder under Input and press Start. Markdown Ready processes supported files directly inside that folder once. It does not recurse into subfolders or watch or poll for later changes.</p>
+              <h3><span class="en">How does folder input work?</span><span class="ko">폴더 입력은 어떻게 동작하나요?</span></h3>
+              <p><span class="en">Choose a folder under Input and press Start. Markdown Ready processes supported files directly inside that folder once. It does not recurse into subfolders or watch or poll for later changes.</span><span class="ko">Input에서 폴더를 고르고 Start를 누르면, 그 폴더 바로 안의 지원 파일을 한 번 처리합니다. 하위 폴더 재귀나 이후 변화 감시·폴링은 하지 않습니다.</span></p>
             </section>
             <section>
-              <h3>Why not upload the PDF directly to an AI chat?</h3>
-              <p>Direct chat is ideal for quick questions. Markdown Ready is for local processing and durable Markdown/JSON that you can inspect, archive, and reuse across tools.</p>
+              <h3><span class="en">Why not upload the PDF directly to an AI chat?</span><span class="ko">PDF를 AI 챗에 직접 올리면 안 되나요?</span></h3>
+              <p><span class="en">Direct chat is ideal for quick questions. Markdown Ready is for local processing and durable Markdown/JSON that you can inspect, archive, and reuse across tools.</span><span class="ko">빠른 질문에는 직접 챗이 좋습니다. Markdown Ready는 로컬 처리와, 검사·보관·도구 간 재사용이 가능한 안정적인 Markdown/JSON을 위한 도구입니다.</span></p>
             </section>
             <section>
-              <h3>Does it bypass copyright restrictions?</h3>
-              <p>No. Process only documents you are authorized to use and follow applicable copyright and other laws.</p>
+              <h3><span class="en">Does it bypass copyright restrictions?</span><span class="ko">저작권 제한을 우회하나요?</span></h3>
+              <p><span class="en">No. Process only documents you are authorized to use and follow applicable copyright and other laws.</span><span class="ko">아니요. 사용 권한이 있는 문서만 처리하고, 관련 저작권 및 기타 법률을 준수해 주세요.</span></p>
             </section>
           </div>
         </section>

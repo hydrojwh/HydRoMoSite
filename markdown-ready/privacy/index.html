@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Markdown Ready processes selected documents locally on your Mac. Document contents are not uploaded by the app, and no cloud OCR API is required for conversion.">
-    <title>Markdown Ready Privacy Policy</title>
+    <script>try{var l=localStorage.getItem("hydromo-lang");if(l!=="ko"&&l!=="en")l="en";document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l);}catch(e){}</script>
+    <meta name="description" content="Markdown Ready processes selected documents locally on your Mac. Document contents are not uploaded by the app, and no cloud OCR API is required for conversion." data-ko="Markdown Ready는 선택한 문서를 Mac에서 로컬로 처리합니다. 앱이 문서 내용을 업로드하지 않고, 변환에 클라우드 OCR API도 필요하지 않습니다.">
+    <title data-ko="Markdown Ready 개인정보처리방침">Markdown Ready Privacy Policy</title>
     <link rel="icon" href="/assets/markdown-ready-icon.svg" type="image/svg+xml">
     <link rel="canonical" href="https://hydromo.dev/markdown-ready/privacy/">
     <meta property="og:type" content="website">
@@ -19,6 +20,7 @@
     <link rel="alternate icon" type="image/png" href="/assets/favicon-64.png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="stylesheet" href="../../styles.css">
+    <script src="../../lang.js" defer></script>
   </head>
   <body>
     <div class="page">
@@ -28,59 +30,72 @@
         </a>
         <nav class="nav-links" aria-label="Main navigation">
           <a href="../">Markdown Ready</a>
-          <a href="../support/">Support</a>
-          <a href="./">Privacy</a>
+          <a href="../support/"><span class="en">Support</span><span class="ko">지원</span></a>
+          <a href="./"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
+          <button id="lang-toggle" class="lang-toggle" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 3.1 2.7 14.9 0 18M12 3c-2.7 3.1-2.7 14.9 0 18"/></svg>
+            <span class="lang-toggle-label">한국어</span>
+          </button>
         </nav>
       </header>
 
       <main class="content">
-        <p class="eyebrow">Privacy</p>
-        <h1>Markdown Ready Privacy Policy</h1>
-        <p>Last updated: June 18, 2026</p>
+        <p class="eyebrow"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></p>
+        <h1><span class="en">Markdown Ready Privacy Policy</span><span class="ko">Markdown Ready 개인정보처리방침</span></h1>
+        <p><span class="en">Last updated: June 18, 2026</span><span class="ko">최종 갱신: 2026년 6월 18일</span></p>
 
         <p>
-          Markdown Ready is a macOS document conversion app by HydRoMo. It converts PDFs, scanned pages, and document images into Markdown and optional JSON files using local processing on your Mac.
+          <span class="en">Markdown Ready is a macOS document conversion app by HydRoMo. It converts PDFs, scanned pages, and document images into Markdown and optional JSON files using local processing on your Mac.</span>
+          <span class="ko">Markdown Ready는 HydRoMo의 macOS 문서 변환 앱입니다. PDF, 스캔 문서, 문서 이미지를 Mac에서 로컬 처리하여 Markdown과 선택적 JSON 파일로 변환합니다.</span>
         </p>
 
-        <h2>Data Collection</h2>
+        <h2><span class="en">Data Collection</span><span class="ko">데이터 수집</span></h2>
         <p>
-          Markdown Ready does not collect data from the app. The app does not include account login, advertising, tracking, analytics, or a cloud OCR API for document conversion.
+          <span class="en">Markdown Ready does not collect data from the app. The app does not include account login, advertising, tracking, analytics, or a cloud OCR API for document conversion.</span>
+          <span class="ko">Markdown Ready는 앱에서 데이터를 수집하지 않습니다. 계정 로그인, 광고, 추적, 분석, 문서 변환용 클라우드 OCR API가 포함되어 있지 않습니다.</span>
         </p>
 
-        <h2>Document Processing</h2>
+        <h2><span class="en">Document Processing</span><span class="ko">문서 처리</span></h2>
         <p>
-          Documents selected in Markdown Ready are processed locally on your Mac. Document contents are not uploaded by Markdown Ready for OCR conversion. Output files are written to the output folder you choose.
+          <span class="en">Documents selected in Markdown Ready are processed locally on your Mac. Document contents are not uploaded by Markdown Ready for OCR conversion. Output files are written to the output folder you choose.</span>
+          <span class="ko">Markdown Ready에서 선택한 문서는 Mac에서 로컬로 처리됩니다. OCR 변환을 위해 문서 내용을 업로드하지 않습니다. 출력 파일은 직접 고른 출력 폴더에 기록됩니다.</span>
         </p>
 
-        <h2>Local Storage</h2>
+        <h2><span class="en">Local Storage</span><span class="ko">로컬 저장</span></h2>
         <p>
-          Markdown Ready may store local settings on your Mac, including selected input/output paths, security-scoped bookmarks granted through macOS file and folder pickers, output preferences, and local conversion state. These values are stored locally for app functionality.
+          <span class="en">Markdown Ready may store local settings on your Mac, including selected input/output paths, security-scoped bookmarks granted through macOS file and folder pickers, output preferences, and local conversion state. These values are stored locally for app functionality.</span>
+          <span class="ko">Markdown Ready는 선택한 입력·출력 경로, macOS 파일·폴더 선택기로 부여받은 보안 범위 북마크, 출력 설정, 로컬 변환 상태 등 앱 설정을 Mac에 저장할 수 있습니다. 이 값은 앱 기능을 위해 로컬에만 저장됩니다.</span>
         </p>
 
-        <h2>Folder Access</h2>
+        <h2><span class="en">Folder Access</span><span class="ko">폴더 접근</span></h2>
         <p>
-          Markdown Ready accesses files and folders only through permissions you grant using macOS file and folder pickers. You can change selected folders in the app.
+          <span class="en">Markdown Ready accesses files and folders only through permissions you grant using macOS file and folder pickers. You can change selected folders in the app.</span>
+          <span class="ko">Markdown Ready는 macOS 파일·폴더 선택기로 부여한 권한을 통해서만 파일과 폴더에 접근합니다. 선택한 폴더는 앱에서 언제든 바꿀 수 있습니다.</span>
         </p>
 
-        <h2>Support</h2>
+        <h2><span class="en">Support</span><span class="ko">지원</span></h2>
         <p>
-          If you contact support, you may choose to provide information such as your email address, app version, macOS version, Mac model, screenshots, logs, or sample files. Support information is used to respond to your request. Do not send sensitive documents unless you intentionally choose to share them.
+          <span class="en">If you contact support, you may choose to provide information such as your email address, app version, macOS version, Mac model, screenshots, logs, or sample files. Support information is used to respond to your request. Do not send sensitive documents unless you intentionally choose to share them.</span>
+          <span class="ko">지원에 문의하면 이메일 주소, 앱 버전, macOS 버전, Mac 모델, 스크린샷, 로그, 샘플 파일 등을 선택적으로 제공할 수 있습니다. 지원 정보는 요청에 응답하는 용도로만 사용됩니다. 민감한 문서는 일부러 공유하기로 결정한 경우가 아니면 보내지 마세요.</span>
         </p>
 
-        <h2>Third-Party Components</h2>
+        <h2><span class="en">Third-Party Components</span><span class="ko">서드파티 구성 요소</span></h2>
         <p>
-          Markdown Ready includes open source software and local OCR model components. License notices are available in the app under About / Open Source Licenses.
+          <span class="en">Markdown Ready includes open source software and local OCR model components. License notices are available in the app under About / Open Source Licenses.</span>
+          <span class="ko">Markdown Ready는 오픈소스 소프트웨어와 로컬 OCR 모델 구성 요소를 포함합니다. 라이선스 고지는 앱의 About / Open Source Licenses에서 볼 수 있습니다.</span>
         </p>
 
-        <h2>Changes</h2>
+        <h2><span class="en">Changes</span><span class="ko">변경</span></h2>
         <p>
-          This policy may be updated as Markdown Ready changes. If app data practices change, App Store privacy information and this policy should be updated accordingly.
+          <span class="en">This policy may be updated as Markdown Ready changes. If app data practices change, App Store privacy information and this policy should be updated accordingly.</span>
+          <span class="ko">이 방침은 Markdown Ready가 변경됨에 따라 갱신될 수 있습니다. 앱의 데이터 관행이 바뀌면 App Store 개인정보 정보와 이 방침도 그에 맞게 갱신됩니다.</span>
         </p>
 
-        <h2>Contact</h2>
+        <h2><span class="en">Contact</span><span class="ko">문의</span></h2>
         <p>
-          For privacy or support questions, contact HydRoMo at
-          <a href="mailto:support@hydromo.dev">support@hydromo.dev</a>.
+          <span class="en">For privacy or support questions, contact HydRoMo at</span>
+          <span class="ko">개인정보·지원 문의는 HydRoMo</span>
+          <a href="mailto:support@hydromo.dev">support@hydromo.dev</a><span class="en">.</span><span class="ko">로 보내주세요.</span>
         </p>
       </main>
 

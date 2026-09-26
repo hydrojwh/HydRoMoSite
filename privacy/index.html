@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Privacy information for HydRoMo products.">
-    <title>Privacy - HydRoMo</title>
+    <script>try{var l=localStorage.getItem("hydromo-lang");if(l!=="ko"&&l!=="en")l="en";document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l);}catch(e){}</script>
+    <meta name="description" content="Privacy information for HydRoMo products." data-ko="HydRoMo 제품의 개인정보처리방침 정보입니다.">
+    <title data-ko="개인정보처리방침 - HydRoMo">Privacy - HydRoMo</title>
     <link rel="icon" href="/assets/hydromo-logo.svg" type="image/svg+xml">
     <link rel="canonical" href="https://hydromo.dev/privacy/">
     <meta property="og:type" content="website">
@@ -19,6 +20,7 @@
     <link rel="alternate icon" type="image/png" href="/assets/favicon-64.png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../lang.js" defer></script>
   </head>
   <body>
     <div class="page">
@@ -27,58 +29,68 @@
           <img src="../assets/hydromo-logo.svg" alt="HydRoMo" width="160" height="110">
         </a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="../#products">Products</a>
-          <a href="../support/">Support</a>
-          <a href="../privacy/">Privacy</a>
+          <a href="../#products"><span class="en">Products</span><span class="ko">제품</span></a>
+          <a href="../support/"><span class="en">Support</span><span class="ko">지원</span></a>
+          <a href="../privacy/"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
+          <button id="lang-toggle" class="lang-toggle" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 3.1 2.7 14.9 0 18M12 3c-2.7 3.1-2.7 14.9 0 18"/></svg>
+            <span class="lang-toggle-label">한국어</span>
+          </button>
         </nav>
       </header>
 
       <main class="content">
-        <p class="eyebrow">Privacy</p>
-        <h1>HydRoMo Privacy</h1>
-        <p>Effective date: June 9, 2026</p>
+        <p class="eyebrow"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></p>
+        <h1><span class="en">HydRoMo Privacy</span><span class="ko">HydRoMo 개인정보처리방침</span></h1>
+        <p><span class="en">Effective date: June 9, 2026</span><span class="ko">시행일: 2026년 6월 9일</span></p>
         <p>
-          HydRoMo publishes product-specific privacy policies because each product has different behavior and data handling requirements.
+          <span class="en">HydRoMo publishes product-specific privacy policies because each product has different behavior and data handling requirements.</span>
+          <span class="ko">HydRoMo는 제품마다 동작 방식과 데이터 처리 요건이 다르기 때문에 제품별 개인정보처리방침을 운영합니다.</span>
         </p>
 
         <div class="support-list">
           <section>
-            <h2>Markdown Ready Privacy Policy</h2>
+            <h2><span class="en">Markdown Ready Privacy Policy</span><span class="ko">Markdown Ready 개인정보처리방침</span></h2>
             <p>
-              Markdown Ready converts PDFs and document images locally on Mac and does not upload document contents for OCR.
+              <span class="en">Markdown Ready converts PDFs and document images locally on Mac and does not upload document contents for OCR.</span>
+              <span class="ko">Markdown Ready는 Mac에서 PDF와 문서 이미지를 로컬로 변환하며, OCR을 위해 문서 내용을 업로드하지 않습니다.</span>
             </p>
             <p><a href="https://hydromo.dev/markdown-ready/privacy/">https://hydromo.dev/markdown-ready/privacy/</a></p>
           </section>
 
           <section>
-            <h2>RockSpin Privacy Policy</h2>
+            <h2><span class="en">RockSpin Privacy Policy</span><span class="ko">RockSpin 개인정보처리방침</span></h2>
             <p>
-              RockSpin uses account, favorite, credit, and AI generation features. Review its dedicated privacy policy for complete details.
+              <span class="en">RockSpin uses account, favorite, credit, and AI generation features. Review its dedicated privacy policy for complete details.</span>
+              <span class="ko">RockSpin은 계정, 즐겨찾기, 크레딧, AI 생성 기능을 사용합니다. 자세한 내용은 전용 개인정보처리방침을 확인해 주세요.</span>
             </p>
             <p><a href="https://rockspin.app/privacy">https://rockspin.app/privacy</a></p>
           </section>
 
           <section>
-            <h2>CleanClip Privacy Policy</h2>
+            <h2><span class="en">CleanClip Privacy Policy</span><span class="ko">CleanClip 개인정보처리방침</span></h2>
             <p>
-              CleanClip processes clipboard content on device, does not require an account, and does not collect personal data.
+              <span class="en">CleanClip processes clipboard content on device, does not require an account, and does not collect personal data.</span>
+              <span class="ko">CleanClip은 클립보드 내용을 기기에서 처리하며, 계정이 필요 없고 개인 데이터를 수집하지 않습니다.</span>
             </p>
             <p><a href="https://cleanclip.hydromo.dev/privacy/">https://cleanclip.hydromo.dev/privacy/</a></p>
           </section>
 
           <section>
-            <h2>Battery Health Privacy Policy</h2>
+            <h2><span class="en">Battery Health Privacy Policy</span><span class="ko">Battery Health 개인정보처리방침</span></h2>
             <p>
-              Battery Health reads battery information locally on your Mac, collects no data, and has no account, analytics, or network access.
+              <span class="en">Battery Health reads battery information locally on your Mac, collects no data, and has no account, analytics, or network access.</span>
+              <span class="ko">Battery Health은 Mac의 배터리 정보를 로컬에서만 읽으며, 데이터를 수집하지 않고 계정·분석·네트워크 접근도 없습니다.</span>
             </p>
             <p><a href="https://hydromo.dev/battery-health/privacy/">https://hydromo.dev/battery-health/privacy/</a></p>
           </section>
         </div>
 
-        <h2>Contact</h2>
+        <h2><span class="en">Contact</span><span class="ko">문의</span></h2>
         <p>
-          For privacy questions about HydRoMo products, contact
-          <a href="mailto:contact@hydromo.dev">contact@hydromo.dev</a>.
+          <span class="en">For privacy questions about HydRoMo products, contact</span>
+          <span class="ko">HydRoMo 제품의 개인정보 관련 문의는</span>
+          <a href="mailto:contact@hydromo.dev">contact@hydromo.dev</a><span class="en">.</span><span class="ko">로 보내주세요.</span>
         </p>
       </main>
 

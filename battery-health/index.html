@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Battery Health is a free menu-bar utility for Mac that shows charge, battery health, cycle count, and power adapter wattage — read locally, never uploaded.">
-    <title>Battery Health - Battery health in your Mac's menu bar</title>
+    <script>try{var l=localStorage.getItem("hydromo-lang");if(l!=="ko"&&l!=="en")l="en";document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l);}catch(e){}</script>
+    <meta name="description" content="Battery Health is a free menu-bar utility for Mac that shows charge, battery health, cycle count, and power adapter wattage — read locally, never uploaded." data-ko="Battery Health은 충전량, 배터리 건강도, 사이클 수, 어댑터 와트를 메뉴 막대에서 보여주는 무료 Mac 유틸리티입니다. 모두 로컬에서 읽고 업로드하지 않습니다.">
+    <title data-ko="Battery Health - 메뉴 막대의 배터리 건강 정보">Battery Health - Battery health in your Mac's menu bar</title>
     <link rel="icon" href="/assets/battery-health-icon.svg" type="image/svg+xml">
     <link rel="canonical" href="https://hydromo.dev/battery-health/">
     <meta property="og:type" content="website">
@@ -19,6 +20,7 @@
     <link rel="alternate icon" type="image/png" href="/assets/favicon-64.png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../lang.js" defer></script>
   </head>
   <body>
     <div class="page">
@@ -27,26 +29,32 @@
           <img src="../assets/hydromo-logo.svg" alt="HydRoMo" width="160" height="110">
         </a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="../#products">Products</a>
-          <a href="support/">Support</a>
-          <a href="privacy/">Privacy</a>
+          <a href="../#products"><span class="en">Products</span><span class="ko">제품</span></a>
+          <a href="support/"><span class="en">Support</span><span class="ko">지원</span></a>
+          <a href="privacy/"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
+          <button id="lang-toggle" class="lang-toggle" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 3.1 2.7 14.9 0 18M12 3c-2.7 3.1-2.7 14.9 0 18"/></svg>
+            <span class="lang-toggle-label">한국어</span>
+          </button>
         </nav>
       </header>
 
       <main>
         <section class="hero product-hero">
           <div>
-            <p class="eyebrow">Battery health in your menu bar</p>
+            <p class="eyebrow"><span class="en">Battery health in your menu bar</span><span class="ko">메뉴 막대의 배터리 건강 정보</span></p>
             <h1>Battery Health</h1>
             <p class="lead">
-              See charge, battery health, cycle count, and power adapter wattage from a pulse-line icon in the menu bar. Everything is read locally on your Mac and never uploaded.
+              <span class="en">See charge, battery health, cycle count, and power adapter wattage from a pulse-line icon in the menu bar. Everything is read locally on your Mac and never uploaded.</span>
+              <span class="ko">메뉴 막대의 펄스 라인 아이콘에서 충전량, 배터리 건강도, 사이클 수, 어댑터 와트를 확인하세요. 모든 값은 Mac에서 로컬로만 읽고 절대 업로드되지 않습니다.</span>
             </p>
             <p class="launch-strip">
-              Free on the Mac App Store. No account, no analytics, no network.
+              <span class="en">Free on the Mac App Store. No account, no analytics, no network.</span>
+              <span class="ko">Mac App Store에서 무료. 계정 없음, 분석 없음, 네트워크 없음.</span>
             </p>
             <div class="actions">
-              <a class="button primary" href="support/">Read Support Guide</a>
-              <a class="button" href="privacy/">Privacy Policy</a>
+              <a class="button primary" href="support/"><span class="en">Read Support Guide</span><span class="ko">지원 가이드 보기</span></a>
+              <a class="button" href="privacy/"><span class="en">Privacy Policy</span><span class="ko">개인정보처리방침</span></a>
             </div>
           </div>
           <img class="app-icon" src="../assets/battery-health-icon.svg" alt="Battery Health app icon" width="180" height="180">
@@ -54,95 +62,97 @@
 
         <section class="section split" aria-labelledby="why-title">
           <div>
-            <p class="eyebrow">One click, four numbers</p>
-            <h2 id="why-title">The battery facts macOS keeps behind System Settings</h2>
+            <p class="eyebrow"><span class="en">One click, four numbers</span><span class="ko">한 번의 클릭, 네 가지 수치</span></p>
+            <h2 id="why-title"><span class="en">The battery facts macOS keeps behind System Settings</span><span class="ko">시스템 설정 뒤에 숨겨둔 배터리 사실들</span></h2>
           </div>
           <p>
-            macOS knows your battery's maximum capacity and cycle count, but shows them several clicks deep. Battery Health puts them one click away, with a colour cue for the health figure and a plain note on where the number comes from.
+            <span class="en">macOS knows your battery's maximum capacity and cycle count, but shows them several clicks deep. Battery Health puts them one click away, with a colour cue for the health figure and a plain note on where the number comes from.</span>
+            <span class="ko">macOS는 배터리 최대 용량과 사이클 수를 알고 있지만, 몇 번 클릭해야 볼 수 있는 곳에 숨겨뒀습니다. Battery Health는 이 값을 클릭 한 번으로 꺼내 보여주고, 건강도에는 색 힌트를, 수치에는 출처를 함께 표시합니다.</span>
           </p>
         </section>
 
         <section class="section" aria-labelledby="features-title">
           <div class="section-heading">
-            <p class="eyebrow">What you see</p>
-            <h2 id="features-title">A small dashboard, nothing more</h2>
+            <p class="eyebrow"><span class="en">What you see</span><span class="ko">화면에 보이는 것</span></p>
+            <h2 id="features-title"><span class="en">A small dashboard, nothing more</span><span class="ko">작은 대시보드, 그 이상도 이하도 아닙니다</span></h2>
           </div>
           <div class="feature-grid">
             <section>
-              <h3>Charge</h3>
-              <p>The current charge level, with a one-click link to the Battery pane in System Settings for charging options.</p>
+              <h3><span class="en">Charge</span><span class="ko">충전량</span></h3>
+              <p><span class="en">The current charge level, with a one-click link to the Battery pane in System Settings for charging options.</span><span class="ko">현재 충전량입니다. 충전 옵션을 조정하려면 옆의 링크로 시스템 설정의 배터리 패널로 한 번에 이동할 수 있습니다.</span></p>
             </section>
             <section>
-              <h3>Battery health</h3>
-              <p>Maximum capacity as a percentage of design capacity: green above 80%, orange at 80%, red below. Tap the info icon to see the legend and how the figure was derived.</p>
+              <h3><span class="en">Battery health</span><span class="ko">배터리 건강도</span></h3>
+              <p><span class="en">Maximum capacity as a percentage of design capacity: green above 80%, orange at 80%, red below. Tap the info icon to see the legend and how the figure was derived.</span><span class="ko">설계 용량 대비 최대 용량의 백분율입니다. 80% 초과는 초록, 80%는 주황, 미만은 빨강으로 표시됩니다. 정보 아이콘을 누르면 범례와 계산 방식을 볼 수 있습니다.</span></p>
             </section>
             <section>
-              <h3>Cycle count</h3>
-              <p>The number of charge cycles the battery has completed.</p>
+              <h3><span class="en">Cycle count</span><span class="ko">사이클 수</span></h3>
+              <p><span class="en">The number of charge cycles the battery has completed.</span><span class="ko">배터리가 완료한 충전 사이클 수입니다.</span></p>
             </section>
             <section>
-              <h3>Power adapter</h3>
-              <p>The rated wattage of the connected adapter, updated the moment you plug in or unplug. A dock that reports no wattage shows as Connected.</p>
+              <h3><span class="en">Power adapter</span><span class="ko">전원 어댑터</span></h3>
+              <p><span class="en">The rated wattage of the connected adapter, updated the moment you plug in or unplug. A dock that reports no wattage shows as Connected.</span><span class="ko">연결된 어댑터의 정격 와트로, 연결·해제 즉시 갱신됩니다. 와트를 보고하지 않는 독은 '연결됨'으로 표시됩니다.</span></p>
             </section>
             <section>
-              <h3>Condition</h3>
-              <p>Shown only when macOS reports a battery condition, so you never see a guessed value.</p>
+              <h3><span class="en">Condition</span><span class="ko">상태</span></h3>
+              <p><span class="en">Shown only when macOS reports a battery condition, so you never see a guessed value.</span><span class="ko">macOS가 배터리 상태를 보고할 때만 표시되므로, 추측값을 보는 일은 없습니다.</span></p>
             </section>
             <section>
-              <h3>Launch at Login</h3>
-              <p>One switch on the dashboard, registered through the standard macOS login-item service.</p>
+              <h3><span class="en">Launch at Login</span><span class="ko">로그인 시 시작</span></h3>
+              <p><span class="en">One switch on the dashboard, registered through the standard macOS login-item service.</span><span class="ko">대시보드의 스위치 하나로, 표준 macOS 로그인 항목 서비스에 등록됩니다.</span></p>
             </section>
           </div>
         </section>
 
         <section class="section split" aria-labelledby="local-title">
           <div>
-            <p class="eyebrow">Private by design</p>
-            <h2 id="local-title">Read locally, stored nowhere</h2>
+            <p class="eyebrow"><span class="en">Private by design</span><span class="ko">설계부터 프라이빗</span></p>
+            <h2 id="local-title"><span class="en">Read locally, stored nowhere</span><span class="ko">로컬에서 읽고, 어디에도 저장하지 않습니다</span></h2>
           </div>
           <p>
-            Battery Health reads a short, fixed list of battery values that macOS already exposes and shows them on screen. It has no account, no analytics, no network access, and keeps no battery history. When macOS does not provide a value, the app shows "Unavailable" rather than estimating one.
+            <span class="en">Battery Health reads a short, fixed list of battery values that macOS already exposes and shows them on screen. It has no account, no analytics, no network access, and keeps no battery history. When macOS does not provide a value, the app shows "Unavailable" rather than estimating one.</span>
+            <span class="ko">Battery Health은 macOS가 이미 제공하는 배터리 값의 짧고 고정된 목록만 읽어 화면에 보여줍니다. 계정, 분석, 네트워크 접근이 없고 배터리 기록도 남기지 않습니다. macOS가 값을 주지 않으면 추정 대신 '사용할 수 없음'을 표시합니다.</span>
           </p>
         </section>
 
         <section class="section" aria-labelledby="sources-title">
           <div class="section-heading">
-            <p class="eyebrow">Where the numbers come from</p>
-            <h2 id="sources-title">Exactly what the app reads</h2>
+            <p class="eyebrow"><span class="en">Where the numbers come from</span><span class="ko">수치의 출처</span></p>
+            <h2 id="sources-title"><span class="en">Exactly what the app reads</span><span class="ko">앱이 읽는 것, 정확히</span></h2>
           </div>
           <div class="feature-grid">
             <section>
-              <h3>Charge and power source</h3>
-              <p>The macOS power sources API: current and maximum charge for the percentage, and whether the Mac is on AC or battery.</p>
+              <h3><span class="en">Charge and power source</span><span class="ko">충전량과 전원</span></h3>
+              <p><span class="en">The macOS power sources API: current and maximum charge for the percentage, and whether the Mac is on AC or battery.</span><span class="ko">macOS 전원 공급 API에서 현재·최대 충전량(백분율용)과 어댑터/배터리 전원 여부를 읽습니다.</span></p>
             </section>
             <section>
-              <h3>Adapter wattage</h3>
-              <p>Only the rated-watts value from the adapter details API. Adapter identifiers and serial numbers are never read.</p>
+              <h3><span class="en">Adapter wattage</span><span class="ko">어댑터 와트</span></h3>
+              <p><span class="en">Only the rated-watts value from the adapter details API. Adapter identifiers and serial numbers are never read.</span><span class="ko">어댑터 상세 API의 정격 와트 값만 읽습니다. 어댑터 식별자나 시리얼 번호는 절대 읽지 않습니다.</span></p>
             </section>
             <section>
-              <h3>Health and cycles</h3>
-              <p>Seven battery properties from the system battery service: cycle count, design capacity, full-charge capacity, reported maximum capacity, and the battery condition strings.</p>
+              <h3><span class="en">Health and cycles</span><span class="ko">건강도와 사이클</span></h3>
+              <p><span class="en">Seven battery properties from the system battery service: cycle count, design capacity, full-charge capacity, reported maximum capacity, and the battery condition strings.</span><span class="ko">시스템 배터리 서비스의 일곱 가지 속성 — 사이클 수, 설계 용량, 완충 용량, 보고된 최대 용량, 배터리 상태 문자열입니다.</span></p>
             </section>
           </div>
         </section>
 
         <section class="section" aria-labelledby="notes-title">
           <div class="section-heading">
-            <p class="eyebrow">Honest limits</p>
-            <h2 id="notes-title">What Battery Health does not do</h2>
+            <p class="eyebrow"><span class="en">Honest limits</span><span class="ko">정직한 한계</span></p>
+            <h2 id="notes-title"><span class="en">What Battery Health does not do</span><span class="ko">Battery Health이 하지 않는 것</span></h2>
           </div>
           <div class="feature-grid">
             <section>
-              <h3>Rated watts, not live power</h3>
-              <p>The Power adapter row shows the adapter's rating. A 67 W adapter reads 67 W whether it is delivering 63 W or nothing at all.</p>
+              <h3><span class="en">Rated watts, not live power</span><span class="ko">정격 와트, 실시간 소비 전력이 아님</span></h3>
+              <p><span class="en">The Power adapter row shows the adapter's rating. A 67 W adapter reads 67 W whether it is delivering 63 W or nothing at all.</span><span class="ko">전원 어댑터 항목은 정격을 보여줍니다. 67 W 어댑터는 63 W를 공급하든 아무것도 공급하지 않든 67 W로 표시됩니다.</span></p>
             </section>
             <section>
-              <h3>No charging control</h3>
-              <p>Charge limits are managed by macOS. The link beside Charge takes you to System Settings, where those options live.</p>
+              <h3><span class="en">No charging control</span><span class="ko">충전 제어 없음</span></h3>
+              <p><span class="en">Charge limits are managed by macOS. The link beside Charge takes you to System Settings, where those options live.</span><span class="ko">충전 한도는 macOS가 관리합니다. 충전량 옆 링크는 해당 옵션이 있는 시스템 설정으로 안내합니다.</span></p>
             </section>
             <section>
-              <h3>Built-in battery required</h3>
-              <p>Battery Health is for MacBook Air and MacBook Pro running macOS 14 or later. On a desktop Mac it reports that battery information is unavailable.</p>
+              <h3><span class="en">Built-in battery required</span><span class="ko">내장 배터리 필요</span></h3>
+              <p><span class="en">Battery Health is for MacBook Air and MacBook Pro running macOS 14 or later. On a desktop Mac it reports that battery information is unavailable.</span><span class="ko">Battery Health은 macOS 14 이상의 MacBook Air와 MacBook Pro용입니다. 데스크톱 Mac에서는 배터리 정보를 사용할 수 없다고 알려줍니다.</span></p>
             </section>
           </div>
         </section>
@@ -150,24 +160,24 @@
         <section class="section" id="questions-and-answers" aria-labelledby="faq-title">
           <div class="section-heading">
             <p class="eyebrow">FAQ</p>
-            <h2 id="faq-title">Common questions</h2>
+            <h2 id="faq-title"><span class="en">Common questions</span><span class="ko">자주 묻는 질문</span></h2>
           </div>
           <div class="support-list">
             <section>
-              <h3>Why does the health figure differ from another app?</h3>
-              <p>Apps differ in which capacity values they divide. Battery Health divides full-charge capacity by design capacity when both are available and says so; if only a reported maximum capacity exists, it shows that value and labels it "Reported by macOS".</p>
+              <h3><span class="en">Why does the health figure differ from another app?</span><span class="ko">다른 앱과 건강도 수치가 왜 다른가요?</span></h3>
+              <p><span class="en">Apps differ in which capacity values they divide. Battery Health divides full-charge capacity by design capacity when both are available and says so; if only a reported maximum capacity exists, it shows that value and labels it "Reported by macOS".</span><span class="ko">앱마다 나누는 용량 값이 다릅니다. Battery Health은 두 값이 모두 있으면 완충 용량을 설계 용량으로 나누고 그렇게 표시합니다. 보고된 최대 용량만 있으면 그 값을 보여주고 'macOS 보고값'이라고 표기합니다.</span></p>
             </section>
             <section>
-              <h3>How often does it refresh?</h3>
-              <p>Health and cycle values refresh once an hour or when you click Refresh. Adapter changes are picked up immediately when you plug in or unplug.</p>
+              <h3><span class="en">How often does it refresh?</span><span class="ko">갱신 주기는?</span></h3>
+              <p><span class="en">Health and cycle values refresh once an hour or when you click Refresh. Adapter changes are picked up immediately when you plug in or unplug.</span><span class="ko">건강도와 사이클 값은 1시간마다 또는 새로 고침을 누를 때 갱신됩니다. 어댑터 연결·해제는 즉시 반영됩니다.</span></p>
             </section>
             <section>
-              <h3>Does it send anything anywhere?</h3>
-              <p>No. The app has no network access. The only outbound action is the optional "Report an Issue" button, which opens a pre-filled draft in your own mail client that you can edit or discard.</p>
+              <h3><span class="en">Does it send anything anywhere?</span><span class="ko">데이터를 어디로 보내나요?</span></h3>
+              <p><span class="en">No. The app has no network access. The only outbound action is the optional "Report an Issue" button, which opens a pre-filled draft in your own mail client that you can edit or discard.</span><span class="ko">아니요. 네트워크 접근이 없습니다. 나가는 동작은 선택적인 '문제 보고' 버튼뿐이며, 직접 편집하거나 버릴 수 있는 임시 메일 초안을 사용 중인 메일 앱에서 엽니다.</span></p>
             </section>
             <section>
-              <h3>Why is the menu-bar icon white rather than coloured?</h3>
-              <p>So it matches the other status items and stays legible on light and dark menu bars. The health colour is shown inside the dashboard.</p>
+              <h3><span class="en">Why is the menu-bar icon white rather than coloured?</span><span class="ko">메뉴 막대 아이콘이 색이 아니라 흰색인 이유는?</span></h3>
+              <p><span class="en">So it matches the other status items and stays legible on light and dark menu bars. The health colour is shown inside the dashboard.</span><span class="ko">다른 상태 항목과 어울리고 밝은·어두운 메뉴 막대 모두에서 잘 보이기 위해서입니다. 건강도 색상은 대시보드 안에서 확인할 수 있습니다.</span></p>
             </section>
           </div>
         </section>
