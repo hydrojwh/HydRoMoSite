@@ -208,6 +208,10 @@ h3 {
   background: rgb(var(--mr-orange));
 }
 
+.product-mark.promptready {
+  background: var(--accent, #6d5bd0);
+}
+
 .product-card p,
 .split p,
 .content p,
