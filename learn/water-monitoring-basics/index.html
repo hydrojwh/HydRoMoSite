@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>try{var l=localStorage.getItem("hydromo-lang");if(l!=="ko"&&l!=="en")l="en";document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l);}catch(e){}</script>
+    <meta name="description" content="Water monitoring basics: water level, discharge, and quality — what each core variable tells you and the trade-offs involved in measuring it." data-ko="수문 모니터링 기초: 수위·유량·수질 — 핵심 변수들이 무엇을 말해주는지, 측정의 균형에 대해.">
+    <title data-ko="수문 모니터링 기초: 무엇을 측정할 것인가 — HydRoMo 러닝">Water Monitoring Basics: What to Measure — HydRoMo Learn</title>
+    <link rel="icon" href="/assets/hydromo-logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://hydromo.dev/learn/water-monitoring-basics/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="HydRoMo">
+    <meta property="og:title" content="Water Monitoring Basics: What to Measure">
+    <meta property="og:description" content="Water level, discharge, and quality — the core variables of hydrologic monitoring, what each one tells you, and the trade-offs involved in measuring them.">
+    <meta property="og:url" content="https://hydromo.dev/learn/water-monitoring-basics/">
+    <meta property="og:image" content="https://hydromo.dev/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="alternate icon" type="image/png" href="/assets/favicon-64.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="../../lang.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <a class="brand" href="../../" aria-label="HydRoMo home">
+          <img src="../../assets/hydromo-logo.svg" alt="HydRoMo" width="160" height="110">
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="../../"><span class="en">Home</span><span class="ko">홈</span></a>
+          <a href="../"><span class="en">Learn</span><span class="ko">가이드</span></a>
+          <a href="../../support/"><span class="en">Support</span><span class="ko">지원</span></a>
+          <button id="lang-toggle" class="lang-toggle" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 3.1 2.7 14.9 0 18M12 3c-2.7 3.1-2.7 14.9 0 18"/></svg>
+            <span class="lang-toggle-label">한국어</span>
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="mission">
+          <p class="eyebrow eyebrow-light"><span class="en">HydRoMo Learn — Guide 01</span><span class="ko">HydRoMo 러닝 — 가이드 01</span></p>
+          <h1>
+            <span class="en">Water Monitoring Basics: What to Measure</span>
+            <span class="ko">수문 모니터링 기초: 무엇을 측정할 것인가</span>
+          </h1>
+        </section>
+
+        <article class="content">
+          <p>
+            <span class="en">Every monitoring program starts with the same question: what should we measure, and why? This guide walks through the core variables of hydrologic monitoring — water level, discharge, and water quality — and the trade-offs involved in measuring each one well.</span>
+            <span class="ko">모든 모니터링은 같은 질문에서 시작합니다 — 무엇을, 왜 측정할 것인가? 이 가이드는 수문 모니터링의 핵심 변수인 수위·유량·수질을 짚고, 각각을 잘 측정하기 위한 균형을 살펴봅니다.</span>
+          </p>
+
+          <h2><span class="en">Why monitor water at all</span><span class="ko">왜 물을 측정하는가</span></h2>
+          <p>
+            <span class="en">Water moves through landscapes on its own schedule. Monitoring turns that movement into numbers we can compare, model, and act on — for flood warning and drought planning, for water-supply and hydropower operations, for ecosystem health, and for the science of how catchments work. Without long records, none of those decisions rest on much.</span>
+            <span class="ko">물은 스스로의 시간표대로 움직입니다. 모니터링은 그 움직임을 비교하고 모델링하고 판단에 쓸 수 있는 숫자로 바꿉니다 — 홍수 경보와 가뭄 대비, 수자원·수력 운영, 생태계 건강, 그리고 유역이 어떻게 작동하는지에 대한 과학을 위해서입니다. 긴 기록이 없으면 이 판단들은 근거 없이 흔들립니다.</span>
+          </p>
+
+          <h2><span class="en">Water level — the backbone record</span><span class="ko">수위 — 기록의 뼈대</span></h2>
+          <p>
+            <span class="en">Water level (stage) is the most widely measured variable for a simple reason: it can be recorded continuously and cheaply, and it is the raw material for much more. Rivers, wells, lakes, and tanks all benefit from a continuous level record. In rivers, stage feeds a stage–discharge relationship (a rating curve) to estimate flow; in groundwater wells, it reveals recharge, pumping stress, and seasonal dynamics.</span>
+            <span class="ko">수위는 가장 널리 측정되는 변수입니다. 이유는 단순합니다 — 연속적으로, 상대적으로 저렴하게 기록할 수 있고, 훨씬 많은 것의 원재료가 되기 때문입니다. 하천·관정·호수·저수지 모두 연속 수위 기록의 수혜자입니다. 하천에서 수위는 수위-유량 관계(이수곡선, rating curve)로 이어져 유량을 추정하고, 지하수 관정에서는 함양과 양수 스트레스, 계절 변동을 보여줍니다.</span>
+          </p>
+
+          <h2><span class="en">Discharge — the variable everyone wants</span><span class="ko">유량 — 모두가 원하는 변수</span></h2>
+          <p>
+            <span class="en">Discharge — the volume of water passing a point per unit time — is the key delivery variable of hydrology, and the hardest of the three to measure well. Direct methods (velocity–area, acoustic doppler, weirs and flumes) each shine in different channel conditions. In practice, most continuous discharge records are derived: measure stage continuously, build a rating curve from periodic direct measurements, and accept that channel change will eventually demand a re-rating.</span>
+            <span class="ko">유량은 단위 시간에 한 지점을 지나는 물의 양으로, 수문학의 핵심 전달 변수이자 세 변수 중 가장 측정이 어렵습니다. 직접법(유속-면적법, 음향 도플러, 위어·수로)은 하천 조건마다 강점이 다릅니다. 실무에서 대부분의 연속 유량 기록은 간접적으로 만듭니다 — 수위를 연속 측정하고, 주기적인 직접 측정으로 이수곡선을 만들고, 하도가 변하면 언젠가 재검정이 필요하다는 점을 받아들입니다.</span>
+          </p>
+
+          <h2><span class="en">Water quality — chemistry in motion</span><span class="ko">수질 — 움직이는 화학</span></h2>
+          <p>
+            <span class="en">Quality variables tell you what the water carries. The common continuous set — temperature, electrical conductivity, pH, dissolved oxygen, and turbidity — is small but powerful: temperature and conductivity respond to almost everything (mixing, sources, contamination), turbidity tracks sediment and often serves as a proxy for pathogens and pollutants, and DO anchors ecosystem assessments. Individual ions and nutrients usually still require lab samples, scheduled around the continuous record.</span>
+            <span class="ko">수질 변수는 물이 무엇을 싣고 있는지 말해줍니다. 연속 측정이 흔한 기본 세트 — 수온·전기전도도(EC)·pH·용존산소(DO)·탁도 — 는 작지만 강력합니다. 수온과 전도도는 혼합·수원·오염 등 거의 모든 것에 반응하고, 탁도는 퇴적물을 따라가며 병원성 미생물과 오염물의 대리 지표가 되기도 하며, DO는 생태계 평가의 기준점입니다. 개별 이온과 영양염류는 아직 실험실 시료 분석이 필요하며, 연속 기록에 맞춰 주기적으로 채수합니다.</span>
+          </p>
+
+          <h2><span class="en">Precipitation — the input side</span><span class="ko">강수 — 들어오는 쪽</span></h2>
+          <p>
+            <span class="en">A water balance needs both sides. Rain gages are simple in principle and famously tricky in practice — wind, siting, and representativeness of a point measurement for a whole catchment all matter. Where snow is part of the picture, snow depth and snow-water equivalent join the list.</span>
+            <span class="ko">수량 수지는 양쪽이 필요합니다. 우량계는 원리는 단순하지만 실무으로 악명 높습니다 — 바람, 설치 지점, 그리고 한 점의 측정이 전체 유역을 대표할 수 있는지가 모두 중요합니다. 눈이 있는 지역에서는 적설 깊이와 설상수당량(SWE)도 목록에 들어옵니다.</span>
+          </p>
+
+          <h2><span class="en">The trade-offs you cannot avoid</span><span class="ko">피할 수 없는 균형</span></h2>
+          <ul>
+            <li>
+              <span class="en"><strong>Accuracy vs. cost.</strong> Research-grade accuracy costs more upfront and in maintenance. Many purposes — education, screening, relative trends — are well served by simpler instruments.</span>
+              <span class="ko"><strong>정확도 vs. 비용.</strong> 연구급 정확도는 초기 비용과 유지 비용 모두 큽니다. 교육·예비 조사·상대적 추세 같은 목적은 더 단순한 기기로도 충분히 답됩니다.</span>
+            </li>
+            <li>
+              <span class="en"><strong>Continuous vs. manual.</strong> Continuous sensors catch storms and events you will never sample by hand, but they drift, foul, and need calibration visits. Manual measurements anchor the continuous record.</span>
+              <span class="ko"><strong>연속 vs. 수동.</strong> 연속 센서는 손으로는 결코 잡지 못할 폭우와 사건을 잡지만, 드리프트와 오염이 있고 캘리브레이션 방문이 필요합니다. 수동 측정이 연속 기록의 닻이 됩니다.</span>
+            </li>
+            <li>
+              <span class="en"><strong>Durability vs. serviceability.</strong> A sealed unit survives the field; an openable unit can be repaired in it. The right answer depends on how far your site is from your desk.</span>
+              <span class="ko"><strong>내구성 vs. 정비성.</strong> 밀봉된 기기는 현장에서 살아남고, 열리는 기기는 현장에서 고칠 수 있습니다. 정답은 현장이 책상에서 얼마나 먼가에 달려 있습니다.</span>
+            </li>
+            <li>
+              <span class="en"><strong>Open formats vs. vendor lock-in.</strong> Data you can read in ten years is part of the measurement. Prefer documented, standard formats over tools that hold your record hostage.</span>
+              <span class="ko"><strong>열린 형식 vs. 벤더 종속.</strong> 10년 뒤에도 읽을 수 있는 데이터가 측정의 일부입니다. 기록을 인질로 잡는 도구보다 문서화된 표준 형식을 택하세요.</span>
+            </li>
+          </ul>
+
+          <h2><span class="en">Before you install anything</span><span class="ko">설치 전에 확인할 것</span></h2>
+          <p>
+            <span class="en">Choose a representative location, not a convenient one. Record metadata from day one — coordinates, elevation, sensor model, installation date — because a measurement without context loses most of its value. Plan maintenance visits before you need them, and always keep the raw values, even after applying corrections.</span>
+            <span class="ko">편리한 곳이 아니라 대표성 있는 곳을 고르세요. 좌표·표고·센서 모델·설치일 같은 메타데이터를 첫날부터 기록하세요 — 맥락 없는 측정값은 가치를 대부분 잃습니다. 필요하기 전에 유지보수 방문 계획을 세우고, 보정을 적용한 뒤에도 항상 원시 값을 보존하세요.</span>
+          </p>
+
+          <h2><span class="en">What&rsquo;s next</span><span class="ko">다음 이야기</span></h2>
+          <p>
+            <span class="en">This guide is the first in a series prepared alongside <a href="../../sensing/">HydRoMo Sensing</a>. Sensor selection criteria and a field deployment checklist are next. Questions or corrections are welcome at <a href="mailto:contact@hydromo.dev">contact@hydromo.dev</a>.</span>
+            <span class="ko">이 가이드는 <a href="../../sensing/">HydRoMo Sensing</a>과 함께 준비하는 시리즈의 첫 편입니다. 다음은 센서 선택 기준과 현장 설치 체크리스트입니다. 질문과 지적은 <a href="mailto:contact@hydromo.dev">contact@hydromo.dev</a>로 환영합니다.</span>
+          </p>
+
+          <p class="guide-back">
+            <a href="../">&larr; <span class="en">All guides</span><span class="ko">가이드 목록</span></a>
+          </p>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <span>&copy; 2026 HydRoMo. All rights reserved.</span>
+        <span><a href="mailto:contact@hydromo.dev">contact@hydromo.dev</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
