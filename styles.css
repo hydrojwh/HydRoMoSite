@@ -643,3 +643,84 @@ h3 {
     animation: none;
   }
 }
+
+/* ── Sensing product page (2026-10) ── */
+
+.pilot-wrap {
+  max-width: 720px;
+}
+
+.pilot-intro {
+  margin: 0 0 26px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.pilot-form {
+  display: grid;
+  gap: 18px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.form-row {
+  display: grid;
+  gap: 8px;
+}
+
+.pilot-form label {
+  font-weight: 750;
+  font-size: 14.5px;
+}
+
+.pilot-form .optional {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.pilot-form input,
+.pilot-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 11px 13px;
+  font: inherit;
+  color: var(--text);
+  background: #ffffff;
+}
+
+.pilot-form input:focus,
+.pilot-form textarea:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+  border-color: var(--blue);
+}
+
+.pilot-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.pilot-form button[type="submit"] {
+  justify-self: start;
+  border: none;
+  cursor: pointer;
+}
+
+.form-note {
+  margin: 4px 0 0;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+.spec-note {
+  margin: 24px 0 0;
+  padding: 14px 16px;
+  border: 1px dashed #a8c3d4;
+  border-radius: 8px;
+  background: #f2f7fa;
+  color: var(--muted);
+}
