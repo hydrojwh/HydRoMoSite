@@ -646,6 +646,11 @@ h3 {
 
 /* ── Sensing product page (2026-10) ── */
 
+/* Wordmark logo (2026-10): horizontal lockup replaces the old block mark */
+.brand img {
+  width: 200px;
+}
+
 .pilot-wrap {
   max-width: 720px;
 }
