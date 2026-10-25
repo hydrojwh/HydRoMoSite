@@ -231,11 +231,11 @@ h3 {
 }
 
 .product-mark.rockspin {
-  background: #4e9cd4;
+  background: var(--coral);
 }
 
 .product-mark.cleanclip {
-  background: #1f4f74;
+  background: var(--green);
 }
 
 .product-mark.markdown-ready {
