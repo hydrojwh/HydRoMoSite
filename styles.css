@@ -2,11 +2,11 @@
   color-scheme: light;
   --bg: #f7f8f9;
   --panel: #ffffff;
-  --text: #16202f;
+  --text: #1d252c;
   --muted: #586270;
   --line: #d9dee5;
-  --blue: #245aa7;
-  --blue-dark: #173f78;
+  --blue: #1c7aa8;
+  --blue-dark: #14567a;
   --green: #14785f;
   --coral: #b94d39;
   --mr-orange: 255 87 51;
@@ -425,7 +425,7 @@ h3 {
   box-sizing: border-box;
   width: 100%;
   padding: 84px max(20px, calc((100% - 1080px) / 2)) 88px;
-  background: linear-gradient(140deg, #0a2540 0%, #0f3a63 52%, #0d5a6b 100%);
+  background: linear-gradient(140deg, #1d252c 0%, #163f5c 55%, #196f98 100%);
   color: #ffffff;
 }
 
@@ -444,7 +444,7 @@ h3 {
 }
 
 .eyebrow-light {
-  color: #7fd6e8;
+  color: #7cc4e8;
 }
 
 .mission .actions {
@@ -454,13 +454,13 @@ h3 {
 .button-bright {
   border-color: #ffffff;
   background: #ffffff;
-  color: #0a2540;
+  color: #1d252c;
 }
 
 .button-bright:hover {
-  border-color: #7fd6e8;
-  background: #7fd6e8;
-  color: #0a2540;
+  border-color: #7cc4e8;
+  background: #7cc4e8;
+  color: #1d252c;
 }
 
 .button-ghost {
@@ -505,15 +505,15 @@ h3 {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #0e7d8c;
-  box-shadow: 0 0 0 0 rgba(14, 125, 140, 0.4);
+  background: #ff6900;
+  box-shadow: 0 0 0 0 rgba(255, 105, 0, 0.4);
   animation: news-pulse 2.2s ease-out infinite;
 }
 
 @keyframes news-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(14, 125, 140, 0.45); }
-  70% { box-shadow: 0 0 0 9px rgba(14, 125, 140, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(14, 125, 140, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(255, 105, 0, 0.45); }
+  70% { box-shadow: 0 0 0 9px rgba(255, 105, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 105, 0, 0); }
 }
 
 .value-grid {
@@ -543,8 +543,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(14, 125, 140, 0.1);
-  color: #0e7d8c;
+  background: rgba(43, 153, 207, 0.12);
+  color: #1c7aa8;
   margin-bottom: 6px;
 }
 
@@ -563,7 +563,7 @@ h3 {
 }
 
 .product-mark.hrm {
-  background: linear-gradient(135deg, #0e7d8c, #245aa7);
+  background: linear-gradient(135deg, #2b99cf, #1d252c);
 }
 
 .product-card.coming-soon {
@@ -577,7 +577,7 @@ h3 {
   margin: 0 auto 72px;
   padding: 44px 42px;
   border-radius: 12px;
-  background: linear-gradient(120deg, #0a2540 0%, #0d5a6b 100%);
+  background: linear-gradient(120deg, #1d252c 0%, #196f98 100%);
   color: #ffffff;
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
