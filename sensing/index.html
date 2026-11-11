@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>try{var l=localStorage.getItem("hydromo-lang");if(l!=="ko"&&l!=="en")l="en";document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l);}catch(e){}</script>
-    <meta name="description" content="HydRoMo Sensing — water monitoring hardware for hydrology. Sensors and loggers for field deployment, now in development. Join the pilot program." data-ko="HydRoMo Sensing — 수문 모니터링 하드웨어. 현장 설치용 센서와 로거를 개발 중입니다. 파일럿 프로그램에 참여하세요.">
-    <title data-ko="HydRoMo Sensing — 수문 모니터링 하드웨어 (개발 중)">HydRoMo Sensing — Water Monitoring Hardware (In Development)</title>
+    <meta name="description" content="HydRoMo Sensing — automated groundwater monitoring instruments: BiMove robotic vertical profiling and BiFlux seepage-flux measurement. In development. Join the pilot program." data-ko="HydRoMo Sensing — 지하수 자동 계측 장비: BiMove 로봇 연직 프로파일링, BiFlux 지표유출량 측정. 개발 중입니다. 파일럿 프로그램에 참여하세요.">
+    <title data-ko="HydRoMo Sensing — 지하수 자동 계측 장비 (개발 중)">HydRoMo Sensing — Groundwater Monitoring Instruments (In Development)</title>
     <link rel="icon" href="/assets/hydromo-logo.svg" type="image/svg+xml">
     <link rel="canonical" href="https://hydromo.dev/sensing/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="HydRoMo">
-    <meta property="og:title" content="HydRoMo Sensing — Water Monitoring Hardware">
-    <meta property="og:description" content="Water monitoring hardware for hydrology — sensors and loggers for field deployment, now in development. Join the pilot program.">
+    <meta property="og:title" content="HydRoMo Sensing — Groundwater Monitoring Instruments">
+    <meta property="og:description" content="Automated groundwater monitoring instruments — BiMove robotic vertical profiling and BiFlux seepage-flux measurement. In development. Join the pilot program.">
     <meta property="og:url" content="https://hydromo.dev/sensing/">
     <meta property="og:image" content="https://hydromo.dev/assets/og-image.png">
     <meta property="og:image:width" content="1200">
@@ -29,9 +29,10 @@
           <img src="../assets/hydromo-logo.svg" alt="HydRoMo" width="248" height="40">
         </a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="../"><span class="en">Home</span><span class="ko">홈</span></a>
           <a href="../#products"><span class="en">Products</span><span class="ko">제품</span></a>
+          <a href="../learn/"><span class="en">Learn</span><span class="ko">가이드</span></a>
           <a href="../support/"><span class="en">Support</span><span class="ko">지원</span></a>
+          <a href="../privacy/"><span class="en">Privacy</span><span class="ko">개인정보처리방침</span></a>
           <button id="lang-toggle" class="lang-toggle" type="button">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 3.1 2.7 14.9 0 18M12 3c-2.7 3.1-2.7 14.9 0 18"/></svg>
             <span class="lang-toggle-label">한국어</span>
@@ -43,12 +44,12 @@
         <section class="mission sensing-hero">
           <p class="eyebrow eyebrow-light"><span class="en">HydRoMo Sensing — Hardware · In Development</span><span class="ko">HydRoMo Sensing — 하드웨어 · 개발 중</span></p>
           <h1>
-            <span class="en">Water monitoring hardware, built for the field.</span>
-            <span class="ko">현장을 위해 만드는 수문 모니터링 하드웨어.</span>
+            <span class="en">Automated instruments for groundwater monitoring.</span>
+            <span class="ko">지하수 모니터링을 위한 자동 계측 장비.</span>
           </h1>
           <p class="mission-lead">
-            <span class="en">Sensors and loggers for hydrology — designed with hydrologists and now in development. Full specifications, pricing, and documentation will be published with the first release.</span>
-            <span class="ko">수문학자와 함께 설계한 센서와 로거를 개발하고 있습니다. 전체 사양·가격·문서는 첫 출시와 함께 공개됩니다.</span>
+            <span class="en">BiMove profiles observation wells from top to bottom; BiFlux measures seepage flux at the streambed. Both run continuously and are now in development. Full specifications, pricing, and documentation will be published with the first release.</span>
+            <span class="ko">BiMove는 관측정을 위에서 아래까지 연직으로 측정하고, BiFlux는 하상의 지표유출량을 측정합니다. 두 장비 모두 연속 자동 측정 방식이며 현재 개발 중입니다. 전체 사양·가격·문서는 첫 출시와 함께 공개됩니다.</span>
           </p>
           <div class="actions">
             <a class="button button-bright" href="#pilot"><span class="en">Join the Pilot Program</span><span class="ko">파일럿 프로그램 참여</span></a>
@@ -59,37 +60,40 @@
         <section class="section" aria-labelledby="building-title">
           <div class="section-heading">
             <p class="eyebrow"><span class="en">What We&rsquo;re Building</span><span class="ko">무엇을 만들고 있나</span></p>
-            <h2 id="building-title"><span class="en">Three Pieces, One System</span><span class="ko">세 가지 부품, 하나의 시스템</span></h2>
+            <h2 id="building-title"><span class="en">Two Instruments, One Data Path</span><span class="ko">두 장비, 하나의 데이터 흐름</span></h2>
           </div>
           <div class="value-grid">
-            <article class="value-card">
+            <article class="value-card" id="bimove">
               <div class="value-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3c3.5 3.8 5.5 7 5.5 10a5.5 5.5 0 1 1-11 0c0-3 2-6.2 5.5-10z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2v20"/><path d="M8 6l4-4 4 4M8 18l4 4 4-4"/><path d="M5 9h3M5 12h3M5 15h3M16 9h3M16 12h3M16 15h3"/></svg>
               </div>
-              <h3><span class="en">Field Sensors</span><span class="ko">현장 센서</span></h3>
+              <p class="card-tag"><span class="en">Robotic Vertical Profiling</span><span class="ko">로봇 연직 프로파일링</span></p>
+              <h3>BiMove</h3>
               <p>
-                <span class="en">Measurement sensors designed for long-term deployment in streams, wells, and study sites — accurate enough for research, simple enough for education.</span>
-                <span class="ko">하천·관정·연구 부지에 장기 설치할 수 있는 측정 센서입니다. 연구에 쓸 수 있을 만큼 정확하고, 교육에 쓸 수 있을 만큼 단순하게 만듭니다.</span>
+                <span class="en">A winch-based robotic profiler that measures vertical electrical conductivity (EC) and temperature profiles continuously in coastal observation wells, tracking the freshwater–saltwater transition zone. ESP32 stepper control with encoder-based depth correction and a dedicated GUI control program.</span>
+                <span class="ko">윈치 기반 로봇 프로파일러로 해안 관측정의 전기전도도(EC)·수온 연직 프로파일을 연속 자동 측정해 담수–염수 전이대를 추적합니다. ESP32 스테퍼 모터 제어, 엔코더 기반 심도 보정, 전용 GUI 제어 프로그램을 갖췄습니다.</span>
+              </p>
+            </article>
+            <article class="value-card" id="biflux">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9c3-2 6 2 9 0s6-2 9 0"/><path d="M3 20h18"/><path d="M8 19v-6M12 19v-6M16 19v-6"/><path d="M6 15l2-2 2 2M10 15l2-2 2 2M14 15l2-2 2 2"/></svg>
+              </div>
+              <p class="card-tag"><span class="en">Automated Seepage-Flux Measurement</span><span class="ko">지표유출량 자동 측정</span></p>
+              <h3>BiFlux</h3>
+              <p>
+                <span class="en">An automated stage-tracking system that measures groundwater seepage flux at the streambed continuously and in real time. LoRa-controlled solenoid valves, a linear actuator for water-surface detection, and a dedicated Python GUI.</span>
+                <span class="ko">자동 수위 추적 방식으로 하상의 지하수 지표유출량을 실시간 연속 측정합니다. LoRa로 제어하는 솔레노이드 밸브, 수면 감지용 리니어 액추에이터, 전용 Python GUI를 갖췄습니다.</span>
               </p>
             </article>
             <article class="value-card">
               <div class="value-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 12v9"/><circle cx="12" cy="10" r="1.6"/><path d="M8.5 6.5a5 5 0 0 0 0 7M15.5 6.5a5 5 0 0 1 0 7M5.7 3.7a9 9 0 0 0 0 12.6M18.3 3.7a9 9 0 0 1 0 12.6"/></svg>
               </div>
-              <h3><span class="en">Data Loggers</span><span class="ko">데이터 로거</span></h3>
-              <p>
-                <span class="en">Loggers that keep recording through the seasons with minimal site visits, and hand their data over in documented, standard formats.</span>
-                <span class="ko">계절이 바뀌어도 최소한의 현장 방문으로 기록을 이어가고, 문서화된 표준 형식으로 데이터를 넘겨주는 로거입니다.</span>
-              </p>
-            </article>
-            <article class="value-card">
-              <div class="value-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17l5-10 5 10M8.5 13.5h7"/><circle cx="19" cy="5" r="2.2"/></svg>
-              </div>
+              <p class="card-tag"><span class="en">Telemetry &amp; Data</span><span class="ko">원격 통신 &amp; 데이터</span></p>
               <h3><span class="en">Open Integration</span><span class="ko">열린 연동</span></h3>
               <p>
-                <span class="en">Standard interfaces and documented data formats, so HydRoMo hardware fits the spreadsheets, scripts, and systems you already use.</span>
-                <span class="ko">표준 인터페이스와 문서화된 데이터 형식으로, 이미 쓰고 계신 스프레드시트·스크립트·시스템에 HydRoMo 하드웨어가 그대로 들어맞습니다.</span>
+                <span class="en">LoRa wireless telemetry with real-time device status reporting, and documented data formats that fit the spreadsheets, scripts, and systems you already use.</span>
+                <span class="ko">LoRa 무선 원격 통신과 실시간 장비 상태 보고, 그리고 이미 쓰고 계신 스프레드시트·스크립트·시스템에 맞는 문서화된 데이터 형식을 제공합니다.</span>
               </p>
             </article>
           </div>
@@ -97,6 +101,35 @@
             <span class="en">Specifications, measurement ranges, and pricing are not published yet — they will be finalized with pilot partners and announced with the first release, and sold through the <a href="../shop/">HydRoMo Shop</a>.</span>
             <span class="ko">사양·측정 범위·가격은 아직 공개 전입니다. 파일럿 파트너와 함께 확정해 첫 출시와 함께 발표하며, <a href="../shop/">HydRoMo 샵</a>에서 판매합니다.</span>
           </p>
+        </section>
+
+        <section class="section" aria-labelledby="evidence-title" id="evidence">
+          <div class="section-heading">
+            <p class="eyebrow"><span class="en">Evidence</span><span class="ko">근거</span></p>
+            <h2 id="evidence-title"><span class="en">Publications and Patents</span><span class="ko">논문과 특허</span></h2>
+          </div>
+          <div class="feature-grid">
+            <section class="placeholder-card" id="publications">
+              <p class="card-tag"><span class="en">Coming Soon</span><span class="ko">준비 중</span></p>
+              <h3><span class="en">Peer-Reviewed Publications</span><span class="ko">게재 논문</span></h3>
+              <p>
+                <span class="en">Peer-reviewed publications on HydRoMo instruments will be listed here.</span>
+                <span class="ko">HydRoMo 장비 관련 게재 논문을 이곳에 정리할 예정입니다.</span>
+              </p>
+              <!-- PUBLICATIONS: add entries as <ul class="ref-list"><li>…</li></ul>
+                   once approved (D-001: listed later, no field sites). -->
+            </section>
+            <section class="placeholder-card" id="patents">
+              <p class="card-tag"><span class="en">Coming Soon</span><span class="ko">준비 중</span></p>
+              <h3><span class="en">Patents</span><span class="ko">특허</span></h3>
+              <p>
+                <span class="en">Patents related to HydRoMo instruments will be listed here.</span>
+                <span class="ko">HydRoMo 장비 관련 특허를 이곳에 정리할 예정입니다.</span>
+              </p>
+              <!-- PATENTS: add entries as <ul class="ref-list"><li>…</li></ul>
+                   once approved (D-001). -->
+            </section>
+          </div>
         </section>
 
         <section class="section" aria-labelledby="pilot-title" id="pilot">
@@ -152,11 +185,11 @@
         <section class="section split" aria-labelledby="sensing-company-title">
           <div>
             <p class="eyebrow"><span class="en">HydRoMo</span><span class="ko">HydRoMo</span></p>
-            <h2 id="sensing-company-title"><span class="en">From the HydRoMo Mission</span><span class="ko">HydRoMo 미션에서 출발했습니다</span></h2>
+            <h2 id="sensing-company-title"><span class="en">Part of HydRoMo</span><span class="ko">HydRoMo의 현장 장비</span></h2>
           </div>
           <p>
-            <span class="en">HydRoMo Sensing extends our work in science software into the field — the same principle of research-grade quality at an honest price, applied to water monitoring hardware. See the <a href="../">full HydRoMo lineup</a>.</span>
-            <span class="ko">HydRoMo Sensing은 과학 소프트웨어에서 쌓은 작업을 현장으로 넓힙니다 — 정직한 가격의 연구용 등급 품질이라는 같은 원칙을 수문 모니터링 하드웨어에 적용합니다. <a href="../">HydRoMo 전체 라인업</a>을 만나보세요.</span>
+            <span class="en">HydRoMo Sensing is the field side of HydRoMo — the same principle of research-grade quality at an honest price, applied to groundwater monitoring instruments. See the <a href="../">full HydRoMo lineup</a>.</span>
+            <span class="ko">HydRoMo Sensing은 HydRoMo의 현장 장비 라인입니다 — 정직한 가격의 연구용 등급 품질이라는 같은 원칙을 지하수 계측 장비에 적용합니다. <a href="../">HydRoMo 전체 라인업</a>을 만나보세요.</span>
           </p>
         </section>
       </main>
